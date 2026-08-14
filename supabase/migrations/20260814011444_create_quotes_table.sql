@@ -38,7 +38,7 @@ INSERT INTO quotes (text, author, category) VALUES
   ('El éxito es la suma de pequeños esfuerzos repetidos día tras día.', 'Robert Collier', 'success'),
   ('La única forma de hacer un gran trabajo es amar lo que haces.', 'Steve Jobs', 'passion'),
   ('No esperes. El tiempo nunca será el adecuado.', 'Napoleon Hill', 'action'),
-  ('Cree en Dios y todo será posible.', 'Anónimo', 'belief'),
+  ('Cree en Dios y todo será posible.', 'Anónimo', 'mindset'),
   ('La perseverancia es la madre del éxito.', 'Anónimo', 'perseverance'),
   ('El mayor riesgo es no tomar ninguno.', 'Anónimo', 'courage'),
   ('La disciplina es el puente entre metas y logros.', 'Jim Rohn', 'discipline'),
@@ -81,7 +81,7 @@ INSERT INTO quotes (text, author, category) VALUES
   ('El miedo es el camino al lado oscuro. El miedo lleva a la ira, la ira lleva al odio, el odio lleva al sufrimiento.', 'Yoda', 'wisdom'),
   ('No puedes tener una vida positiva con una mente negativa.', 'Anónimo', 'mindset'),
   ('El secreto de salir adelante es empezar.', 'Mark Twain', 'action'),
-  ('La confianza en Dios es el primer secreto del éxito.', 'Anónimo', 'belief'),
+  ('La confianza en Dios es el primer secreto del éxito.', 'Anónimo', 'mindset'),
   ('Cada logro comienza con la decisión de intentarlo.', 'Anónimo', 'determination'),
   ('La vida es un 10% lo que me pasa y un 90% de cómo reacciono a ello.', 'John Maxwell', 'attitude'),
   ('El mayor gloría en vivir no está en nunca caer, sino en levantarnos cada vez que caemos.', 'Nelson Mandela', 'perseverance')
