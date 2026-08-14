@@ -69,6 +69,7 @@ function App() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [dbError, setDbError] = useState(false);
   const [showFavorites, setShowFavorites] = useState(false);
   const [copied, setCopied] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -93,20 +94,28 @@ function App() {
 
   const loadQuotes = useCallback(async () => {
     setLoading(true);
-    const { data, error } = await supabase.from('quotes').select('*');
-    if (error) {
-      console.error('Error loading quotes:', error);
+    setDbError(false);
+    try {
+      const { data, error } = await supabase.from('quotes').select('*');
+      if (error) {
+        console.error('Error loading quotes:', error);
+        setDbError(true);
+        setLoading(false);
+        return;
+      }
+      setQuotes(data || []);
+      if (data && data.length > 0) {
+        const dayOfYear = Math.floor(
+          (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000
+        );
+        setCurrentQuote(data[dayOfYear % data.length]);
+      }
       setLoading(false);
-      return;
+    } catch (err) {
+      console.error('Failed to load quotes:', err);
+      setDbError(true);
+      setLoading(false);
     }
-    setQuotes(data || []);
-    if (data && data.length > 0) {
-      const dayOfYear = Math.floor(
-        (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000
-      );
-      setCurrentQuote(data[dayOfYear % data.length]);
-    }
-    setLoading(false);
   }, []);
 
   const refreshQuote = useCallback(() => {
@@ -229,7 +238,19 @@ function App() {
           </p>
 
           {/* Quote of the Day Card */}
-          {loading ? (
+          {dbError ? (
+            <div className="glass rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto animate-scale-in">
+              <p className="text-gray-300 text-lg mb-2">No se pudieron cargar las frases.</p>
+              <p className="text-gray-500 text-sm">Verifica tu conexión e inténtalo de nuevo.</p>
+              <button
+                onClick={() => loadQuotes()}
+                className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white font-medium hover:shadow-lg hover:shadow-amber-500/30 transition-all hover:scale-105"
+              >
+                <RefreshCw className="w-4 h-4" />
+                Reintentar
+              </button>
+            </div>
+          ) : loading ? (
             <div className="glass rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto animate-pulse">
               <div className="h-6 w-24 bg-white/10 rounded-full mx-auto mb-6" />
               <div className="space-y-3">
