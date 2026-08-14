@@ -230,7 +230,7 @@ function App() {
 
           <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold mb-6 animate-fade-in-up leading-tight">
             “Yo soy el camino, la verdad y la vida.”<br></br>
- <span className="text-gradient-gold"> — Jesús | Juan 14:6</span>
+ <span className="text-gradient-gold"> — Jesús — , Juan 14:6</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
@@ -410,11 +410,12 @@ function App() {
             <span className="text-sm text-gray-300">Contacto</span>
           </div>
           <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-4">
-            ¿Tienes una frase que <span className="text-gradient-gold">inspirar</span>?
+            ¿Seguimos creciendo  <span className="text-gradient-gold">juntos</span>?
           </h2>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
-            Comparte tus frases favoritas, sugerencias, o simplemente saluda.
-            Me encantaría saber de ti.
+            Encuéntrame en YouTube como La Motivadora y acompáñame cada jueves para descubrir una nueva huella de Dios y seguir conociendo Su corazón a través de Su gracia.
+También puedes compartir tus preguntas, sugerencias, temas o peticiones de oración. Me encantará saber de ti. 🙏
+Cada jueves, un nuevo mensaje. Cada día, más cerca de Dios.
           </p>
           <a
             href="mailto:sandragravesmotivadora@gmail.com"
