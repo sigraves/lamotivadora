@@ -229,12 +229,13 @@ function App() {
           </div>
 
           <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold mb-6 animate-fade-in-up leading-tight">
-            Enciende tu <span className="text-gradient-gold">fuego interior</span>
+            “Yo soy el camino, la verdad y la vida.”
+ <span className="text-gradient-gold">— Jesús | Juan 14:6</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            Cada gran logro comenzó con una sola idea, una sola palabra, un solo paso.
-            Encuentra la chispa que te impulse hoy.
+            La inspiración puede llegar a través de muchas voces, pero nuestra fuerza, dirección y esperanza vienen de Dios. 
+            Que cada palabra que encuentres aquí te anime a crecer, reflexionar y acercarte cada día más a Él.
           </p>
 
           {/* Quote of the Day Card */}
