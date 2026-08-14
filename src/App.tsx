@@ -42,7 +42,7 @@ const CATEGORY_LABELS: Record<string, string> = {
   mindset: 'Renovación',
   courage: 'Valentía',
   dreams: 'Esperanza',
-  'love': 'Identidad en Dios',
+  
   discipline: 'Disciplina',
   passion: 'Amor',
   habit: 'Caminar con Dios',
