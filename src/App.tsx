@@ -435,10 +435,10 @@ function App() {
             <span className="font-serif text-lg font-bold">La Motivadora</span>
           </div>
           <p className="text-gray-500 text-sm">
-            La motivación te pone en marcha. El hábito es lo que hace que sigas.
+            Comparto contigo lo que voy descubriendo en mi caminar con Dios, para que juntos podamos conocer mejor Su corazón.
           </p>
           <p className="text-gray-600 text-xs mt-4">
-            Hecho con inspiración. Para inspirar.
+            Cada día más cerca de Dios.
           </p>
           <a
             href="mailto:sandragravesmotivadora@gmail.com"
