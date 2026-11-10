@@ -26,6 +26,12 @@ export default {
           300: '#f0cd7a',
           200: '#f7e3b0',
         },
+        rose: {
+          800: '#8a1a3a',
+          700: '#a02142',
+          600: '#b8356a',
+          500: '#d14a82',
+        },
       },
       fontFamily: {
         serif: ['"Playfair Display"', 'Georgia', 'serif'],

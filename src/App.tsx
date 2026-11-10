@@ -238,9 +238,9 @@ function App() {
             <Reveal>
               <a
                 href="/OraMujer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-600 text-brand-900 font-semibold text-sm shadow-lg shadow-gold-500/20 hover:shadow-xl hover:shadow-gold-500/30 hover:scale-[1.05] transition-all mb-6"
+                className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-rose-600 to-rose-800 text-white font-bold text-base sm:text-lg shadow-lg shadow-rose-700/30 hover:shadow-xl hover:shadow-rose-700/40 hover:scale-[1.05] transition-all mb-6"
               >
-                <Heart className="w-4 h-4 fill-current" />
+                <Heart className="w-5 h-5 fill-current" />
                 ¡Ora Mujer!
               </a>
             </Reveal>

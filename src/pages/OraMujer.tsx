@@ -188,12 +188,12 @@ export function OraMujerLibrary() {
       </section>
 
       {/* ===================== INTRO ===================== */}
-      <section className="py-12 px-6 bg-white">
+      <section className="py-8 px-6 bg-white">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-base sm:text-lg text-brand-700 leading-relaxed">
-            Bienvenida a este espacio de oración. Aquí encontrarás oraciones para diferentes
-            momentos y temporadas de tu vida. Busca por tema, por etapa, o simplemente explora
-            y deja que Dios hable a tu corazón a través de cada palabra.
+          <div className="w-full h-[5px] bg-gradient-to-r from-rose-600 to-rose-800 rounded-full mb-6" />
+          <p className="text-sm sm:text-base text-brand-700 leading-relaxed">
+            Bienvenida a este espacio de oración, donde encontrarás palabras para acercarte a
+            Dios en cada etapa de tu vida y permitir que Él le hable a tu corazón.
           </p>
         </div>
       </section>
@@ -354,7 +354,7 @@ export function OraMujerLibrary() {
           {/* Results count */}
           <p className="text-sm text-brand-500 mb-6">
             {filteredPrayers.length}{' '}
-            {filteredPrayers.length === 1 ? 'oración encontrada' : 'oraciones encontradas'}
+            {filteredPrayers.length === 1 ? 'oración disponible' : 'oraciones disponibles'}
           </p>
 
           {/* Empty state */}
