@@ -7,6 +7,8 @@ import {
   Heart,
   Sparkles,
   ChevronRight,
+  ChevronDown,
+  Filter,
   Copy,
   Share2,
   Check,
@@ -121,6 +123,8 @@ export function OraMujerLibrary() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
   const [selectedStage, setSelectedStage] = useState<string | null>(null);
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const activeFilterCount = (selectedTopic ? 1 : 0) + (selectedStage ? 1 : 0);
 
   const filteredPrayers = useMemo(() => {
     const q = searchQuery.toLowerCase();
@@ -195,85 +199,149 @@ export function OraMujerLibrary() {
       </section>
 
       {/* ===================== SEARCH + FILTERS ===================== */}
-      <section className="py-8 px-6 bg-brand-50 sticky top-[64px] z-40 border-y border-brand-100">
+      <section className="py-6 px-6 bg-brand-50 sticky top-[64px] z-40 border-y border-brand-100">
         <div className="max-w-5xl mx-auto">
-          {/* Search bar */}
-          <div className="relative mb-6">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-brand-400" />
-            <input
-              type="text"
-              placeholder="¿Por qué deseas orar hoy?"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-12 py-3.5 rounded-full bg-white border border-brand-200 text-brand-900 placeholder:text-brand-400 focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 transition-all"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-brand-400 hover:text-brand-700 transition-colors"
-                aria-label="Limpiar búsqueda"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            )}
-          </div>
-
-          {/* Topic filters */}
-          <div className="mb-4">
-            <p className="text-xs font-semibold text-brand-500 uppercase tracking-widest mb-2">
-              Tema
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <FilterChip
-                label="Todos"
-                active={selectedTopic === null}
-                onClick={() => setSelectedTopic(null)}
+          {/* Search bar + filter toggle row */}
+          <div className="flex flex-col sm:flex-row gap-3">
+            <div className="relative flex-1">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-brand-400" />
+              <input
+                type="text"
+                placeholder="¿Por qué deseas orar hoy?"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-12 pr-12 py-3.5 rounded-full bg-white border border-brand-200 text-brand-900 placeholder:text-brand-400 focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 transition-all"
               />
-              {prayerTopics.map((topic) => (
-                <FilterChip
-                  key={topic}
-                  label={topic}
-                  active={selectedTopic === topic}
-                  onClick={() =>
-                    setSelectedTopic(selectedTopic === topic ? null : topic)
-                  }
-                />
-              ))}
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-brand-400 hover:text-brand-700 transition-colors"
+                  aria-label="Limpiar búsqueda"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              )}
             </div>
-          </div>
 
-          {/* Life stage filters */}
-          <div>
-            <p className="text-xs font-semibold text-brand-500 uppercase tracking-widest mb-2">
-              Etapa de vida
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <FilterChip
-                label="Todas"
-                active={selectedStage === null}
-                onClick={() => setSelectedStage(null)}
+            {/* Filter toggle button */}
+            <button
+              onClick={() => setFiltersOpen(!filtersOpen)}
+              className={`inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full font-medium text-sm transition-all whitespace-nowrap ${
+                filtersOpen || activeFilterCount > 0
+                  ? 'bg-brand-700 text-white shadow-md'
+                  : 'bg-white text-brand-700 border border-brand-200 hover:border-brand-400'
+              }`}
+            >
+              <Filter className="w-4 h-4" />
+              Filtros
+              {activeFilterCount > 0 && (
+                <span className="bg-gold-400 text-brand-900 text-xs font-bold rounded-full min-w-[20px] h-5 flex items-center justify-center px-1.5">
+                  {activeFilterCount}
+                </span>
+              )}
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${filtersOpen ? 'rotate-180' : ''}`}
               />
-              {prayerLifeStages.map((stage) => (
-                <FilterChip
-                  key={stage}
-                  label={stage}
-                  active={selectedStage === stage}
-                  onClick={() =>
-                    setSelectedStage(selectedStage === stage ? null : stage)
-                  }
-                />
-              ))}
-            </div>
+            </button>
           </div>
 
-          {/* Clear all */}
-          {hasActiveFilters && (
-            <div className="mt-4 text-center">
+          {/* Collapsible filters panel */}
+          {filtersOpen && (
+            <div className="mt-4 pt-4 border-t border-brand-100">
+              {/* Topic filters */}
+              <div className="mb-4">
+                <p className="text-xs font-semibold text-brand-500 uppercase tracking-widest mb-2">
+                  Tema
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <FilterChip
+                    label="Todos"
+                    active={selectedTopic === null}
+                    onClick={() => setSelectedTopic(null)}
+                  />
+                  {prayerTopics.map((topic) => (
+                    <FilterChip
+                      key={topic}
+                      label={topic}
+                      active={selectedTopic === topic}
+                      onClick={() =>
+                        setSelectedTopic(selectedTopic === topic ? null : topic)
+                      }
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Life stage filters */}
+              <div className="mb-4">
+                <p className="text-xs font-semibold text-brand-500 uppercase tracking-widest mb-2">
+                  Etapa de vida
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <FilterChip
+                    label="Todas"
+                    active={selectedStage === null}
+                    onClick={() => setSelectedStage(null)}
+                  />
+                  {prayerLifeStages.map((stage) => (
+                    <FilterChip
+                      key={stage}
+                      label={stage}
+                      active={selectedStage === stage}
+                      onClick={() =>
+                        setSelectedStage(selectedStage === stage ? null : stage)
+                      }
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Clear all */}
+              {hasActiveFilters && (
+                <div className="text-center">
+                  <button
+                    onClick={clearAll}
+                    className="text-sm text-gold-600 font-medium hover:text-gold-500 transition-colors"
+                  >
+                    Limpiar todos los filtros
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Active filter summary when collapsed */}
+          {!filtersOpen && hasActiveFilters && (
+            <div className="mt-3 flex items-center gap-2 flex-wrap">
+              {selectedTopic && (
+                <span className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-brand-100 text-brand-700">
+                  {selectedTopic}
+                  <button
+                    onClick={() => setSelectedTopic(null)}
+                    className="hover:text-brand-900"
+                    aria-label="Quitar filtro de tema"
+                  >
+                    <X className="w-3 h-3" />
+                  </button>
+                </span>
+              )}
+              {selectedStage && (
+                <span className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-brand-100 text-brand-700">
+                  {selectedStage}
+                  <button
+                    onClick={() => setSelectedStage(null)}
+                    className="hover:text-brand-900"
+                    aria-label="Quitar filtro de etapa"
+                  >
+                    <X className="w-3 h-3" />
+                  </button>
+                </span>
+              )}
               <button
                 onClick={clearAll}
-                className="text-sm text-gold-600 font-medium hover:text-gold-500 transition-colors"
+                className="text-xs text-gold-600 font-medium hover:text-gold-500 transition-colors"
               >
-                Limpiar todos los filtros
+                Limpiar todo
               </button>
             </div>
           )}
