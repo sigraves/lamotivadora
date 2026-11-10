@@ -11,6 +11,7 @@ import {
   Heart,
   Sparkles,
 } from 'lucide-react';
+import OraMujer from '@/pages/OraMujer';
 
 const YOUTUBE_CHANNEL = 'https://www.youtube.com/@SandraGraves';
 const EMAIL = 'sandragravesmotivadora@gmail.com';
@@ -135,6 +136,18 @@ function SectionHeading({
 function App() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [route, setRoute] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const onPop = () => setRoute(window.location.pathname);
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  // Route to OraMujer page and prayer detail sub-routes
+  if (route.toLowerCase().startsWith('/oramujer')) {
+    return <OraMujer />;
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -223,10 +236,13 @@ function App() {
           {/* Text */}
           <div className="text-center lg:text-left">
             <Reveal>
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-brand-200 mb-6 shadow-sm">
-                <Sparkles className="w-4 h-4 text-gold-500" />
-                <span className="text-sm text-brand-700 font-medium">Nuevos mensajes cada jueves</span>
-              </div>
+              <a
+                href="/OraMujer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-600 text-brand-900 font-semibold text-sm shadow-lg shadow-gold-500/20 hover:shadow-xl hover:shadow-gold-500/30 hover:scale-[1.05] transition-all mb-6"
+              >
+                <Heart className="w-4 h-4 fill-current" />
+                ¡Ora Mujer!
+              </a>
             </Reveal>
 
             <Reveal delay={100}>

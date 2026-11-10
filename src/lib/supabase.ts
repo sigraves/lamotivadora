@@ -19,3 +19,5 @@ export type Quote = {
   category: string;
   created_at: string;
 };
+
+
