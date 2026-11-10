@@ -10,8 +10,14 @@ import {
   BookOpen,
   Heart,
   Sparkles,
+  HandHeart,
+  MessageCircleHeart,
+  Sparkle,
 } from 'lucide-react';
 import OraMujer from '@/pages/OraMujer';
+import AgradeceMujer from '@/pages/AgradeceMujer';
+import ClamaMujer from '@/pages/ClamaMujer';
+import PerdonaMujer from '@/pages/PerdonaMujer';
 
 const YOUTUBE_CHANNEL = 'https://www.youtube.com/@SandraGraves';
 const EMAIL = 'sandragravesmotivadora@gmail.com';
@@ -28,6 +34,7 @@ const PLAYLISTS = [
 const NAV_LINKS = [
   { href: '#inicio', label: 'Inicio' },
   { href: '#sobre-mi', label: 'Sobre Mí' },
+  { href: '#oraciones', label: 'Oraciones', highlight: true },
   { href: '#mensajes', label: 'Mensajes' },
   { href: '#youtube', label: 'YouTube' },
   { href: '#contacto', label: 'Contacto' },
@@ -144,9 +151,19 @@ function App() {
     return () => window.removeEventListener('popstate', onPop);
   }, []);
 
-  // Route to OraMujer page and prayer detail sub-routes
-  if (route.toLowerCase().startsWith('/oramujer')) {
+  // Route to prayer library pages and their detail sub-routes
+  const routeLower = route.toLowerCase();
+  if (routeLower.startsWith('/oramujer')) {
     return <OraMujer />;
+  }
+  if (routeLower.startsWith('/agradecemujer')) {
+    return <AgradeceMujer />;
+  }
+  if (routeLower.startsWith('/clamamujer')) {
+    return <ClamaMujer />;
+  }
+  if (routeLower.startsWith('/perdonamujer')) {
+    return <PerdonaMujer />;
   }
 
   useEffect(() => {
@@ -189,8 +206,12 @@ function App() {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 rounded-full text-sm font-medium text-brand-800 hover:bg-brand-100 hover:text-brand-900 transition-colors"
+                className={link.highlight
+                  ? 'inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-sm font-bold text-white bg-gradient-to-r from-rose-600 to-rose-800 shadow-md shadow-rose-700/30 hover:shadow-lg hover:shadow-rose-700/40 hover:scale-[1.05] transition-all'
+                  : 'px-4 py-2 rounded-full text-sm font-medium text-brand-800 hover:bg-brand-100 hover:text-brand-900 transition-colors'
+                }
               >
+                {link.highlight && <Heart className="w-3.5 h-3.5 fill-current" />}
                 {link.label}
               </a>
             ))}
@@ -215,8 +236,12 @@ function App() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="px-4 py-3 rounded-lg text-brand-800 hover:bg-brand-100 font-medium transition-colors"
+                  className={link.highlight
+                    ? 'inline-flex items-center gap-1.5 px-4 py-3 rounded-lg text-white font-bold bg-gradient-to-r from-rose-600 to-rose-800 transition-all'
+                    : 'px-4 py-3 rounded-lg text-brand-800 hover:bg-brand-100 font-medium transition-colors'
+                  }
                 >
+                  {link.highlight && <Heart className="w-4 h-4 fill-current" />}
                   {link.label}
                 </a>
               ))}
@@ -235,17 +260,7 @@ function App() {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text */}
           <div className="text-center lg:text-left">
-            <Reveal>
-              <a
-                href="/OraMujer"
-                className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-rose-600 to-rose-800 text-white font-bold text-base sm:text-lg shadow-lg shadow-rose-700/30 hover:shadow-xl hover:shadow-rose-700/40 hover:scale-[1.05] transition-all mb-6"
-              >
-                <Heart className="w-5 h-5 fill-current" />
-                ¡Ora Mujer!
-              </a>
-            </Reveal>
-
-            <Reveal delay={100}>
+            <Reveal delay={0}>
               <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-900 leading-[1.1] mb-4">
                 Sandra Graves
                 <span className="block text-gradient-gold text-3xl sm:text-4xl md:text-5xl mt-1">
@@ -313,8 +328,104 @@ function App() {
         </div>
       </section>
 
+      {/* ===================== PRAYER LIBRARIES ===================== */}
+      <section id="oraciones" className="py-20 sm:py-28 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <Reveal>
+            <SectionHeading>Cuatro bibliotecas de oración para tu vida</SectionHeading>
+          </Reveal>
+
+          <Reveal delay={100}>
+            <p className="text-base sm:text-lg text-brand-700 leading-relaxed mb-12 max-w-2xl">
+              400 oraciones para acercarte a Dios en cada temporada de tu vida. Elige una biblioteca
+              según lo que tu corazón necesita hoy.
+            </p>
+          </Reveal>
+
+          <Reveal delay={150}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Ora Mujer */}
+              <a
+                href="/OraMujer"
+                className="group rounded-2xl overflow-hidden card-shadow hover:card-shadow-lg hover:scale-[1.03] transition-all bg-gradient-to-br from-rose-50 to-white border border-rose-100"
+              >
+                <div className="p-7 flex flex-col items-center text-center h-full">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-500 to-rose-700 flex items-center justify-center shadow-lg shadow-rose-600/20 mb-5 group-hover:scale-110 transition-transform">
+                    <HandHeart className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-brand-900 mb-2">Ora Mujer</h3>
+                  <p className="text-sm text-brand-600 leading-relaxed mb-4">
+                    100 oraciones para acercarte a Dios en cada etapa de tu vida.
+                  </p>
+                  <span className="mt-auto text-sm font-semibold text-rose-600 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Explorar <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+
+              {/* Clama Mujer */}
+              <a
+                href="/ClamaMujer"
+                className="group rounded-2xl overflow-hidden card-shadow hover:card-shadow-lg hover:scale-[1.03] transition-all bg-gradient-to-br from-amber-50 to-white border border-amber-100"
+              >
+                <div className="p-7 flex flex-col items-center text-center h-full">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-700 flex items-center justify-center shadow-lg shadow-amber-600/20 mb-5 group-hover:scale-110 transition-transform">
+                    <MessageCircleHeart className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-brand-900 mb-2">Clama Mujer</h3>
+                  <p className="text-sm text-brand-600 leading-relaxed mb-4">
+                    100 oraciones para clamar a Dios con audacia en medio de la tormenta.
+                  </p>
+                  <span className="mt-auto text-sm font-semibold text-amber-600 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Explorar <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+
+              {/* Perdona Mujer */}
+              <a
+                href="/PerdonaMujer"
+                className="group rounded-2xl overflow-hidden card-shadow hover:card-shadow-lg hover:scale-[1.03] transition-all bg-gradient-to-br from-sky-50 to-white border border-sky-100"
+              >
+                <div className="p-7 flex flex-col items-center text-center h-full">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-700 flex items-center justify-center shadow-lg shadow-sky-600/20 mb-5 group-hover:scale-110 transition-transform">
+                    <Sparkle className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-brand-900 mb-2">Perdona Mujer</h3>
+                  <p className="text-sm text-brand-600 leading-relaxed mb-4">
+                    100 oraciones para soltar el dolor y abrazar la libertad del perdón.
+                  </p>
+                  <span className="mt-auto text-sm font-semibold text-sky-600 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Explorar <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+
+              {/* Agradece Mujer */}
+              <a
+                href="/AgradeceMujer"
+                className="group rounded-2xl overflow-hidden card-shadow hover:card-shadow-lg hover:scale-[1.03] transition-all bg-gradient-to-br from-emerald-50 to-white border border-emerald-100"
+              >
+                <div className="p-7 flex flex-col items-center text-center h-full">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center shadow-lg shadow-emerald-600/20 mb-5 group-hover:scale-110 transition-transform">
+                    <Sparkles className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-brand-900 mb-2">Agradece Mujer</h3>
+                  <p className="text-sm text-brand-600 leading-relaxed mb-4">
+                    100 oraciones para agradecer a Dios en cada temporada de tu vida.
+                  </p>
+                  <span className="mt-auto text-sm font-semibold text-emerald-600 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Explorar <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ===================== ¿QUIÉN ES LA MOTIVADORA? ===================== */}
-      <section className="py-20 sm:py-28 px-6 bg-white">
+      <section className="py-20 sm:py-28 px-6 bg-brand-50">
         <div className="max-w-3xl mx-auto">
           <Reveal>
             <SectionHeading>

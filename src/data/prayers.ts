@@ -46,7 +46,7 @@ export const prayers: Prayer[] = [
     topic: "Salud y bienestar",
     lifeStage: "Todas las edades",
     bibleReference: "Jeremías 17:14",
-    body: "Señor Jesús, conoces mi cuerpo mejor que yo y sabes lo que temo cuando llegan el dolor y los resultados médicos. Hoy te pido sanidad con fe; creo que tienes poder para restaurar. También te ruego sabiduría para quienes me atienden, paciencia con los tratamientos y descanso para mi mente. No permitas que mi identidad quede reducida a un diagnóstico. Cuando me canse de esperar, acompáñame en lo cotidiano: una noche de sueño, una mano amable, una pequeña mejoría. Si mi camino es largo, que nunca tenga que recorrerlo sin Tu consuelo. En Tus manos pongo mi salud. Amén.",
+    body: "Señor Jesús, conoces mi cuerpo mejor que yo y sabes lo que temo cuando llegan el dolor y los resultados médicos. Hoy te pido sanidad con fe; creo que tienes poder para restaurar. También te ruego sabiduría para quienes me atienden, paciencia con los tratamientos y descanso para mi mente. No permitas que mi identidad quede reducida a un diagnóstico. Cuando me canse de esperar, acompáñame en lo cotidiano: una noche de sueño, una mano amable, una pequeña mejoría. Si mi camino es largo, que nunca tenga que recorrerlo sin Tu consuelo. En Tus manos pongo mi salud, en el nombre de Jesús. Amén.",
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ export const prayers: Prayer[] = [
     topic: "Soledad y plenitud",
     lifeStage: "Adulta",
     bibleReference: "Salmo 16:11",
-    body: "Padre Celestial, gracias por enseñarme que estar sola no significa estar incompleta. Hay una paz hermosa en conocer mis propios pensamientos, cuidar mi hogar y disfrutar de los días sin tener que demostrar nada. Líbrame de creer que necesito una pareja para ser valiosa y también de cerrar mi corazón por miedo. Si llegan nuevas relaciones, que sean sanas; si no llegan, que mi vida siga llena de sentido. Enséñame a cultivar amistades, servir con alegría y disfrutar de Tu compañía. No quiero vivir esperando que otra persona me dé permiso para ser feliz. Amén.",
+    body: "Padre Celestial, gracias por enseñarme que estar sola no significa estar incompleta. Hay una paz hermosa en conocer mis propios pensamientos, cuidar mi hogar y disfrutar de los días sin tener que demostrar nada. Líbrame de creer que necesito una pareja para ser valiosa y también de cerrar mi corazón por miedo. Si llegan nuevas relaciones, que sean sanas; si no llegan, que mi vida siga llena de sentido. Enséñame a cultivar amistades, servir con alegría y disfrutar de Tu compañía. No quiero vivir esperando que otra persona me dé permiso para ser feliz. En el nombre de Jesús. Amén.",
   },
   {
     id: 7,
@@ -82,7 +82,7 @@ export const prayers: Prayer[] = [
     topic: "Fortaleza y perseverancia",
     lifeStage: "Todas las edades",
     bibleReference: "Gálatas 6:9",
-    body: "Señor de los Cielos, hay semillas que he sembrado con esfuerzo y todavía no veo fruto. Conoces mis madrugadas, mis intentos fallidos y las veces que he querido rendirme. Te pido claridad para distinguir entre perseverar con fe y aferrarme por orgullo a un camino equivocado. Corrige mi dirección cuando sea necesario y fortalece mis manos cuando deba continuar. No permitas que la comparación me robe la paciencia. Que mi constancia nazca de confiar en Ti y no del deseo de demostrarles algo a otros. Sostén mi esperanza hoy. Amén.",
+    body: "Señor de los Cielos, hay semillas que he sembrado con esfuerzo y todavía no veo fruto. Conoces mis madrugadas, mis intentos fallidos y las veces que he querido rendirme. Te pido claridad para distinguir entre perseverar con fe y aferrarme por orgullo a un camino equivocado. Corrige mi dirección cuando sea necesario y fortalece mis manos cuando deba continuar. No permitas que la comparación me robe la paciencia. Que mi constancia nazca de confiar en Ti y no del deseo de demostrarles algo a otros. Sostén mi esperanza hoy, en el nombre de Cristo Jesús. Amén.",
   },
   {
     id: 9,
@@ -100,7 +100,7 @@ export const prayers: Prayer[] = [
     topic: "Identidad y autoestima",
     lifeStage: "Todas las edades",
     bibleReference: "Romanos 8:38-39",
-    body: "Padre Eterno, gracias porque Tu amor no se compra con belleza, éxito ni perfección. Cuando alguien me rechaza, mi corazón tiende a preguntarse qué me falta. Recuérdame que mi valor no se decide por la opinión de una persona. Enséñame a recibir el cariño verdadero con gratitud y a no mendigar afecto donde solo encuentro desprecio. Que Tu amor me haga humilde, no arrogante; segura, no indiferente. Deseo amar desde la libertad y no desde el miedo de ser abandonada. Gracias por conocerme por completo y seguir llamándome a Ti. Amén.",
+    body: "Padre Eterno, gracias porque Tu amor no se compra con belleza, éxito ni perfección. Cuando alguien me rechaza, mi corazón tiende a preguntarse qué me falta. Recuérdame que mi valor no se decide por la opinión de una persona. Enséñame a recibir el cariño verdadero con gratitud y a no mendigar afecto donde solo encuentro desprecio. Que Tu amor me haga humilde, no arrogante; segura, no indiferente. Deseo amar desde la libertad y no desde el miedo de ser abandonada. Gracias por conocerme por completo y seguir llamándome a Ti. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 11,
@@ -109,7 +109,7 @@ export const prayers: Prayer[] = [
     topic: "Servicio y sacrificio",
     lifeStage: "Adulta",
     bibleReference: "Mateo 11:28",
-    body: "Señor Jesús, he dado tiempo, dinero, atención y fuerzas hasta quedarme sin casi nada para mí. Tú conoces el amor detrás de mis sacrificios, pero también sabes cuándo doy por temor a decepcionar. Enséñame que servir no significa desaparecer. Dame sabiduría para decir sí con alegría y no sin culpa. Recuérdame que también soy Tu hija y necesito alimento, descanso y cuidado. Que mis manos sigan abiertas para ayudar, pero que mi corazón no se vuelva resentido por expectativas imposibles. Recibo Tu invitación a descansar. Amén.",
+    body: "Señor Jesús, he dado tiempo, dinero, atención y fuerzas hasta quedarme sin casi nada para mí. Tú conoces el amor detrás de mis sacrificios, pero también sabes cuándo doy por temor a decepcionar. Enséñame que servir no significa desaparecer. Dame sabiduría para decir sí con alegría y no sin culpa. Recuérdame que también soy Tu hija y necesito alimento, descanso y cuidado. Que mis manos sigan abiertas para ayudar, pero que mi corazón no se vuelva resentido por expectativas imposibles. Recibo Tu invitación a descansar, en el nombre de Jesús. Amén.",
   },
   {
     id: 12,
@@ -118,7 +118,7 @@ export const prayers: Prayer[] = [
     topic: "Servicio y sacrificio",
     lifeStage: "Adulta",
     bibleReference: "Hebreos 6:10",
-    body: "Dios que todo lo ves, hay decisiones dolorosas que tomé por amor y que nadie conoce. A veces escucho críticas de quienes nunca vieron las noches que pasé despierta ni lo que tuve que dejar atrás. Guarda mi corazón de vivir buscando aplausos, pero tampoco permitas que el silencio de otros me convenza de que no importo. Sana la amargura que empieza a crecer cuando me siento olvidada. Dame oportunidades de construir una vida propia sin negar mi historia. Tú conoces mis motivos y mis heridas; pongo ambos delante de Ti. Amén.",
+    body: "Dios que todo lo ves, hay decisiones dolorosas que tomé por amor y que nadie conoce. A veces escucho críticas de quienes nunca vieron las noches que pasé despierta ni lo que tuve que dejar atrás. Guarda mi corazón de vivir buscando aplausos, pero tampoco permitas que el silencio de otros me convenza de que no importo. Sana la amargura que empieza a crecer cuando me siento olvidada. Dame oportunidades de construir una vida propia sin negar mi historia. Tú conoces mis motivos y mis heridas; pongo ambos delante de Ti. En el nombre de Jesús. Amén.",
   },
   {
     id: 13,
@@ -127,7 +127,7 @@ export const prayers: Prayer[] = [
     topic: "Maternidad y familia",
     lifeStage: "Adulta",
     bibleReference: "Salmo 68:5",
-    body: "Padre Celestial, Tú sabes lo que cuesta ser quien consuela, corrige, trabaja y vuelve a empezar cuando la casa queda en silencio. No siempre sé si estoy tomando las decisiones correctas. Te pido sabiduría para criar sin descargar mis miedos sobre mis hijos, provisión para cubrir nuestras necesidades y personas confiables que nos acompañen. Cuando me falten fuerzas, ayúdame a recibir apoyo sin vergüenza. No quiero que mis hijos recuerden solo mis sacrificios; deseo que también recuerden nuestra alegría, nuestras conversaciones y nuestra fe. Sostén este hogar, Señor. Amén.",
+    body: "Padre Celestial, Tú sabes lo que cuesta ser quien consuela, corrige, trabaja y vuelve a empezar cuando la casa queda en silencio. No siempre sé si estoy tomando las decisiones correctas. Te pido sabiduría para criar sin descargar mis miedos sobre mis hijos, provisión para cubrir nuestras necesidades y personas confiables que nos acompañen. Cuando me falten fuerzas, ayúdame a recibir apoyo sin vergüenza. No quiero que mis hijos recuerden solo mis sacrificios; deseo que también recuerden nuestra alegría, nuestras conversaciones y nuestra fe. Sostén este hogar, en el nombre de Cristo Jesús. Amén.",
   },
   {
     id: 14,
@@ -145,7 +145,7 @@ export const prayers: Prayer[] = [
     topic: "Maternidad y familia",
     lifeStage: "Adulta",
     bibleReference: "Proverbios 3:5-6",
-    body: "Señor, hay conversaciones que antes eran fáciles y ahora parecen imposibles. Extraño la cercanía con mi hijo adulto, pero no quiero obligarlo a sentir lo que no siente. Muéstrame si debo pedir perdón por algo que hice, escuchar una verdad incómoda o simplemente respetar su espacio. Líbrame de usar la culpa para conseguir atención. Si es posible, abre un camino de reconciliación sincera, sin fingimientos ni reproches acumulados. Mientras espero, ayúdame a vivir con paz y a seguir amando sin perder mi dignidad. Padre, guía nuestros corazones. Amén.",
+    body: "Señor, hay conversaciones que antes eran fáciles y ahora parecen imposibles. Extraño la cercanía con mi hijo adulto, pero no quiero obligarlo a sentir lo que no siente. Muéstrame si debo pedir perdón por algo que hice, escuchar una verdad incómoda o simplemente respetar su espacio. Líbrame de usar la culpa para conseguir atención. Si es posible, abre un camino de reconciliación sincera, sin fingimientos ni reproches acumulados. Mientras espero, ayúdame a vivir con paz y a seguir amando sin perder mi dignidad. Padre, guía nuestros corazones. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 16,
@@ -154,7 +154,7 @@ export const prayers: Prayer[] = [
     topic: "Maternidad y familia",
     lifeStage: "Adulta",
     bibleReference: "2 Corintios 12:9",
-    body: "Padre de Amor, gracias por la vida singular de mi hijo. Conoces sus capacidades, sus desafíos y la belleza que otros a veces no saben reconocer. Dame fuerzas para defender su dignidad sin convertirlo en una carga ni reducirlo a un diagnóstico. Abre puertas a apoyos, educación, atención médica y comunidades que lo reciban con respeto. Cuando me preocupe por su futuro, ayúdame a preparar lo que esté a mi alcance y a confiarte lo demás. Enséñame a celebrar sus avances sin compararlos con los de nadie. Que nuestro hogar tenga descanso, alegría y esperanza. Amén.",
+    body: "Padre de Amor, gracias por la vida singular de mi hijo. Conoces sus capacidades, sus desafíos y la belleza que otros a veces no saben reconocer. Dame fuerzas para defender su dignidad sin convertirlo en una carga ni reducirlo a un diagnóstico. Abre puertas a apoyos, educación, atención médica y comunidades que lo reciban con respeto. Cuando me preocupe por su futuro, ayúdame a preparar lo que esté a mi alcance y a confiarte lo demás. Enséñame a celebrar sus avances sin compararlos con los de nadie. Que nuestro hogar tenga descanso, alegría y esperanza. En el nombre de Jesús. Amén.",
   },
   {
     id: 17,
@@ -181,7 +181,7 @@ export const prayers: Prayer[] = [
     topic: "Maternidad y familia",
     lifeStage: "Adulta mayor",
     bibleReference: "Isaías 46:4",
-    body: "Mi Dios, pensé que esta etapa sería de descanso, pero nuevamente preparo comidas, acompaño tareas y sostengo corazones pequeños. Amo a mis nietos, aunque hay días en que me siento cansada y preocupada por el futuro. Concédeme salud, recursos y una red de apoyo que no me deje sola con toda la responsabilidad. Ayúdame a criar con ternura sin repetir heridas antiguas. Guarda a estos niños de sentirse abandonados o culpables por lo que ocurrió entre los adultos. Y recuérdame que también necesito cuidado. Padre, acompaña nuestra casa. Amén.",
+    body: "Mi Dios, pensé que esta etapa sería de descanso, pero nuevamente preparo comidas, acompaño tareas y sostengo corazones pequeños. Amo a mis nietos, aunque hay días en que me siento cansada y preocupada por el futuro. Concédeme salud, recursos y una red de apoyo que no me deje sola con toda la responsabilidad. Ayúdame a criar con ternura sin repetir heridas antiguas. Guarda a estos niños de sentirse abandonados o culpables por lo que ocurrió entre los adultos. Y recuérdame que también necesito cuidado. Padre, acompaña nuestra casa. En el nombre de Yeshúa. Amén.",
   },
   {
     id: 20,
@@ -190,7 +190,7 @@ export const prayers: Prayer[] = [
     topic: "Relaciones y matrimonio",
     lifeStage: "Adulta",
     bibleReference: "Efesios 4:2-3",
-    body: "Señor Jesús, amo a mi esposo, pero hay palabras que llevo guardadas por miedo a iniciar una discusión. Enséñame a hablar con claridad sin herir y a escuchar sin preparar una defensa. Ayúdanos a reconocer cuándo estamos cansados, cuándo necesitamos perdón y cuándo debemos buscar ayuda. No permitas que la rutina nos vuelva extraños ni que el orgullo nos impida reparar lo que dañamos. Que el respeto sea mutuo, el cariño se demuestre en actos y la verdad encuentre un lugar seguro entre nosotros. Bendice nuestro matrimonio con paciencia y humildad. Amén.",
+    body: "Señor Jesús, amo a mi esposo, pero hay palabras que llevo guardadas por miedo a iniciar una discusión. Enséñame a hablar con claridad sin herir y a escuchar sin preparar una defensa. Ayúdanos a reconocer cuándo estamos cansados, cuándo necesitamos perdón y cuándo debemos buscar ayuda. No permitas que la rutina nos vuelva extraños ni que el orgullo nos impida reparar lo que dañamos. Que el respeto sea mutuo, el cariño se demuestre en actos y la verdad encuentre un lugar seguro entre nosotros. Bendice nuestro matrimonio con paciencia y humildad. En el nombre de Jesús. Amén.",
   },
   {
     id: 21,
@@ -199,7 +199,7 @@ export const prayers: Prayer[] = [
     topic: "Relaciones y matrimonio",
     lifeStage: "Adulta",
     bibleReference: "Salmo 62:8",
-    body: "Padre Celestial, es doloroso compartir un techo y sentir que nadie ve lo que sucede dentro de mí. No quiero fingir que todo está bien ni buscar consuelo en caminos que puedan causar más heridas. Dame valor para expresar mis necesidades con honestidad y sabiduría para escuchar las de mi esposo. Si necesitamos orientación, ayúdanos a buscarla. Si hay desprecio o daño, muéstrame cómo proteger mi dignidad. Mientras atravieso esta etapa, recuérdame que Tú escuchas incluso las palabras que no logro decir en casa. Amén.",
+    body: "Padre Celestial, es doloroso compartir un techo y sentir que nadie ve lo que sucede dentro de mí. No quiero fingir que todo está bien ni buscar consuelo en caminos que puedan causar más heridas. Dame valor para expresar mis necesidades con honestidad y sabiduría para escuchar las de mi esposo. Si necesitamos orientación, ayúdanos a buscarla. Si hay desprecio o daño, muéstrame cómo proteger mi dignidad. Mientras atravieso esta etapa, recuérdame que Tú escuchas incluso las palabras que no logro decir en casa. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 22,
@@ -208,7 +208,7 @@ export const prayers: Prayer[] = [
     topic: "Relaciones y matrimonio",
     lifeStage: "Adulta",
     bibleReference: "Salmo 147:3",
-    body: "Dios Misericordioso, hay promesas que imaginé para toda la vida y ahora debo aprender a despedir. Siento tristeza, alivio, culpa o enojo, a veces todo en el mismo día. Te pido sabiduría para tomar decisiones justas, especialmente si hay hijos involucrados. Guarda mi lengua de usar el dolor para destruir y mi corazón de aceptar maltrato por miedo a empezar de nuevo. Sana lo que se quebró en mí y enséñame a asumir mis errores sin cargar con los de otra persona. Mi futuro todavía puede tener propósito en Tus manos. Amén.",
+    body: "Dios Misericordioso, hay promesas que imaginé para toda la vida y ahora debo aprender a despedir. Siento tristeza, alivio, culpa o enojo, a veces todo en el mismo día. Te pido sabiduría para tomar decisiones justas, especialmente si hay hijos involucrados. Guarda mi lengua de usar el dolor para destruir y mi corazón de aceptar maltrato por miedo a empezar de nuevo. Sana lo que se quebró en mí y enséñame a asumir mis errores sin cargar con los de otra persona. Mi futuro todavía puede tener propósito en Tus manos. En el nombre de Jesús. Amén.",
   },
   {
     id: 23,
@@ -244,7 +244,7 @@ export const prayers: Prayer[] = [
     topic: "Sanidad emocional",
     lifeStage: "Todas las edades",
     bibleReference: "1 Pedro 5:7",
-    body: "Padre Celestial, mi mente corre hacia desgracias que todavía no han ocurrido. Mi cuerpo se tensa y mi corazón intenta controlar cada detalle. Hoy te entrego aquello que no puedo resolver, sin negar las responsabilidades que sí debo atender. Ayúdame a respirar, descansar, pedir orientación y concentrarme en lo que tengo delante. Que la fe no se convierta en una obligación de sentirme tranquila inmediatamente. Acompáñame mientras aprendo a vivir un día a la vez. Tú conoces mis temores y no me rechazas por traerlos a Tu presencia. Amén.",
+    body: "Padre Celestial, mi mente corre hacia desgracias que todavía no han ocurrido. Mi cuerpo se tensa y mi corazón intenta controlar cada detalle. Hoy te entrego aquello que no puedo resolver, sin negar las responsabilidades que sí debo atender. Ayúdame a respirar, descansar, pedir orientación y concentrarme en lo que tengo delante. Que la fe no se convierta en una obligación de sentirme tranquila inmediatamente. Acompáñame mientras aprendo a vivir un día a la vez. Tú conoces mis temores y no me rechazas por traerlos a Tu presencia. En el nombre de Cristo Jesús. Amén.",
   },
   {
     id: 27,
@@ -253,7 +253,7 @@ export const prayers: Prayer[] = [
     topic: "Sanidad emocional",
     lifeStage: "Todas las edades",
     bibleReference: "Efesios 4:32",
-    body: "Señor Jesús, me hirieron profundamente y una parte de mí todavía desea que esa persona comprenda el daño que causó. No quiero fingir un perdón que aún no he trabajado. Te pido que comiences a liberar mi corazón del odio sin obligarme a negar la verdad. Enséñame a establecer límites, a buscar justicia cuando corresponda y a dejar de alimentar fantasías de venganza. No permitas que lo que me hicieron gobierne el resto de mi vida. Guíame paso a paso hacia una libertad que no dependa del arrepentimiento ajeno. Amén.",
+    body: "Señor Jesús, me hirieron profundamente y una parte de mí todavía desea que esa persona comprenda el daño que causó. No quiero fingir un perdón que aún no he trabajado. Te pido que comiences a liberar mi corazón del odio sin obligarme a negar la verdad. Enséñame a establecer límites, a buscar justicia cuando corresponda y a dejar de alimentar fantasías de venganza. No permitas que lo que me hicieron gobierne el resto de mi vida. Guíame paso a paso hacia una libertad que no dependa del arrepentimiento ajeno. En el nombre de Jesús. Amén.",
   },
   {
     id: 28,
@@ -271,7 +271,7 @@ export const prayers: Prayer[] = [
     topic: "Sanidad emocional",
     lifeStage: "Todas las edades",
     bibleReference: "2 Corintios 5:17",
-    body: "Padre Misericordioso, hay capítulos de mi historia que quisiera arrancar. A veces pienso que, si otros supieran todo, dejarían de respetarme. Tú conoces la verdad completa y aun así me llamas a acercarme a Ti. Ayúdame a asumir mis responsabilidades sin vivir condenándome cada día. Dame sabiduría para compartir mi historia solo con personas seguras y para aprender de ella sin quedar atrapada. Que mi pasado no sea una cadena ni una excusa, sino un lugar donde Tu gracia pueda producir cambio verdadero. Amén.",
+    body: "Padre Misericordioso, hay capítulos de mi historia que quisiera arrancar. A veces pienso que, si otros supieran todo, dejarían de respetarme. Tú conoces la verdad completa y aun así me llamas a acercarme a Ti. Ayúdame a asumir mis responsabilidades sin vivir condenándome cada día. Dame sabiduría para compartir mi historia solo con personas seguras y para aprender de ella sin quedar atrapada. Que mi pasado no sea una cadena ni una excusa, sino un lugar donde Tu gracia pueda producir cambio verdadero. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 30,
@@ -280,7 +280,7 @@ export const prayers: Prayer[] = [
     topic: "Sanidad emocional",
     lifeStage: "Todas las edades",
     bibleReference: "Salmo 27:10",
-    body: "Mi Creador, conozco el dolor de no ser elegida, de quedar fuera de una conversación o de sentir que mi presencia incomoda. A veces convierto un rechazo en una sentencia sobre toda mi persona. Recuérdame que no todas las puertas cerradas definen mi valor. Dame discernimiento para reconocer relaciones sanas y coraje para apartarme de quienes me humillan. Sana mi necesidad de agradar a todos. Quiero vivir con un corazón abierto, pero no entregado al juicio de cualquiera. Gracias porque puedo encontrar refugio en Ti. Amén.",
+    body: "Mi Creador, conozco el dolor de no ser elegida, de quedar fuera de una conversación o de sentir que mi presencia incomoda. A veces convierto un rechazo en una sentencia sobre toda mi persona. Recuérdame que no todas las puertas cerradas definen mi valor. Dame discernimiento para reconocer relaciones sanas y coraje para apartarme de quienes me humillan. Sana mi necesidad de agradar a todos. Quiero vivir con un corazón abierto, pero no entregado al juicio de cualquiera. Gracias porque puedo encontrar refugio en Ti. En el nombre de Jesús. Amén.",
   },
   {
     id: 31,
@@ -289,7 +289,7 @@ export const prayers: Prayer[] = [
     topic: "Sanidad emocional",
     lifeStage: "Todas las edades",
     bibleReference: "Proverbios 17:17",
-    body: "Señor Jesús, confié secretos y entregué cariño a alguien que terminó hiriéndome. Me cuesta aceptar que una amistad también puede romper el corazón. Guarda mis palabras para que no responda con la misma traición. Ayúdame a reconocer lo sucedido sin minimizarlo, a poner distancia si es necesario y a no sospechar de todas las personas por una experiencia dolorosa. Si hay espacio para una conversación honesta, dame sabiduría; si no lo hay, concédeme paz para soltar. Enséñame a conservar la capacidad de amar sin abandonar la prudencia. Amén.",
+    body: "Señor Jesús, confié secretos y entregué cariño a alguien que terminó hiriéndome. Me cuesta aceptar que una amistad también puede romper el corazón. Guarda mis palabras para que no responda con la misma traición. Ayúdame a reconocer lo sucedido sin minimizarlo, a poner distancia si es necesario y a no sospechar de todas las personas por una experiencia dolorosa. Si hay espacio para una conversación honesta, dame sabiduría; si no lo hay, concédeme paz para soltar. Enséñame a conservar la capacidad de amar sin abandonar la prudencia. En el nombre de Cristo Jesús. Amén.",
   },
   {
     id: 32,
@@ -307,7 +307,7 @@ export const prayers: Prayer[] = [
     topic: "Sanidad emocional",
     lifeStage: "Todas las edades",
     bibleReference: "Isaías 43:19",
-    body: "Dios Creador, estoy delante de una puerta que no sé si debo cruzar. Detrás quedan hábitos conocidos; delante hay incertidumbre. Te pido sabiduría para no confundir una oportunidad con una huida ni el miedo con una advertencia segura. Ayúdame a prepararme, pedir consejo y dar pasos responsables. Si este camino es bueno, abre posibilidades y fortalece mi ánimo; si no lo es, corrige mi dirección. No quiero que mis fracasos antiguos dicten lo que puedo intentar hoy. Camino confiando en Tu guía. Amén.",
+    body: "Dios Creador, estoy delante de una puerta que no sé si debo cruzar. Detrás quedan hábitos conocidos; delante hay incertidumbre. Te pido sabiduría para no confundir una oportunidad con una huida ni el miedo con una advertencia segura. Ayúdame a prepararme, pedir consejo y dar pasos responsables. Si este camino es bueno, abre posibilidades y fortalece mi ánimo; si no lo es, corrige mi dirección. No quiero que mis fracasos antiguos dicten lo que puedo intentar hoy. Camino confiando en Tu guía. En el nombre de Jesús. Amén.",
   },
   {
     id: 34,
@@ -316,7 +316,7 @@ export const prayers: Prayer[] = [
     topic: "Salud y bienestar",
     lifeStage: "Todas las edades",
     bibleReference: "2 Corintios 4:16",
-    body: "Padre de misericordias, Tú sabes lo agotador que es explicar un dolor que otros no pueden ver. Hay días en que mi cuerpo limita planes sencillos y mi ánimo se entristece. Te pido alivio, atención médica sabia y personas que me crean sin exigirme pruebas constantes. Ayúdame a adaptar mi vida sin avergonzarme de mis límites. No permitas que el dolor ocupe todo el espacio de mi identidad. Muéstrame pequeñas alegrías posibles aun en días difíciles. Creo que puedes obrar, Señor, y descanso en Tu compañía mientras avanzo. Amén.",
+    body: "Padre de misericordias, Tú sabes lo agotador que es explicar un dolor que otros no pueden ver. Hay días en que mi cuerpo limita planes sencillos y mi ánimo se entristece. Te pido alivio, atención médica sabia y personas que me crean sin exigirme pruebas constantes. Ayúdame a adaptar mi vida sin avergonzarme de mis límites. No permitas que el dolor ocupe todo el espacio de mi identidad. Muéstrame pequeñas alegrías posibles aun en días difíciles. Creo que puedes obrar y descanso en Tu compañía mientras avanzo. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 35,
@@ -325,7 +325,7 @@ export const prayers: Prayer[] = [
     topic: "Salud y bienestar",
     lifeStage: "Todas las edades",
     bibleReference: "Salmo 56:3",
-    body: "Señor de los Cielos, hay una llamada pendiente que me inquieta. Mi imaginación intenta adelantarse a resultados que todavía no conozco. Te pido paz para esta espera y claridad para escuchar lo que digan los profesionales de salud. Si llegan noticias difíciles, dame fuerzas y apoyo; si llegan buenas noticias, que mi gratitud sea sincera. No quiero desperdiciar este día viviendo dentro de todos los futuros posibles. Ayúdame a ocuparme de lo necesario y entregarte lo que no controlo. Padre, sostén mi corazón. Amén.",
+    body: "Señor de los Cielos, hay una llamada pendiente que me inquieta. Mi imaginación intenta adelantarse a resultados que todavía no conozco. Te pido paz para esta espera y claridad para escuchar lo que digan los profesionales de salud. Si llegan noticias difíciles, dame fuerzas y apoyo; si llegan buenas noticias, que mi gratitud sea sincera. No quiero desperdiciar este día viviendo dentro de todos los futuros posibles. Ayúdame a ocuparme de lo necesario y entregarte lo que no controlo. Padre, sostén mi corazón. En el nombre de Yeshúa. Amén.",
   },
   {
     id: 36,
@@ -334,7 +334,7 @@ export const prayers: Prayer[] = [
     topic: "Salud y bienestar",
     lifeStage: "Adulta",
     bibleReference: "Salmo 46:1",
-    body: "Jesús, hoy pronuncio una palabra que nunca quise escuchar: cáncer. Tengo miedo de los tratamientos, de los cambios en mi cuerpo y de lo que pueda suceder. Te pido sanidad con fe y sabiduría para mi equipo médico. Sostén a quienes me acompañan y ayúdame a decirles la verdad cuando esté cansada. Si pierdo el cabello, las fuerzas o la paciencia, recuérdame que mi dignidad permanece intacta. Dame momentos de descanso en medio de las citas y procedimientos. No sé todo lo que viene, pero puedo buscarte hoy. Amén.",
+    body: "Jesús, hoy pronuncio una palabra que nunca quise escuchar: cáncer. Tengo miedo de los tratamientos, de los cambios en mi cuerpo y de lo que pueda suceder. Te pido sanidad con fe y sabiduría para mi equipo médico. Sostén a quienes me acompañan y ayúdame a decirles la verdad cuando esté cansada. Si pierdo el cabello, las fuerzas o la paciencia, recuérdame que mi dignidad permanece intacta. Dame momentos de descanso en medio de las citas y procedimientos. No sé todo lo que viene, pero puedo buscarte hoy. En el nombre de Jesús. Amén.",
   },
   {
     id: 37,
@@ -343,7 +343,7 @@ export const prayers: Prayer[] = [
     topic: "Salud y bienestar",
     lifeStage: "Adulta mayor",
     bibleReference: "Isaías 46:4",
-    body: "Padre Eterno, mi cuerpo cambia y a veces extraño la facilidad con que antes hacía tantas cosas. Ayúdame a no despreciar los años que he vivido ni a medir mi valor por mi juventud. Dame salud para lo posible, paciencia para aceptar ayuda y valentía para mantener mi voz en las decisiones que me afectan. Gracias por las historias, las personas y las lecciones que llevo conmigo. Que mis días no se llenen solo de nostalgia: todavía puedo aprender, reír, bendecir y descubrir motivos para agradecer. Camina conmigo en esta etapa. Amén.",
+    body: "Padre Eterno, mi cuerpo cambia y a veces extraño la facilidad con que antes hacía tantas cosas. Ayúdame a no despreciar los años que he vivido ni a medir mi valor por mi juventud. Dame salud para lo posible, paciencia para aceptar ayuda y valentía para mantener mi voz en las decisiones que me afectan. Gracias por las historias, las personas y las lecciones que llevo conmigo. Que mis días no se llenen solo de nostalgia: todavía puedo aprender, reír, bendecir y descubrir motivos para agradecer. Camina conmigo en esta etapa. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 38,
@@ -352,7 +352,7 @@ export const prayers: Prayer[] = [
     topic: "Salud y bienestar",
     lifeStage: "Todas las edades",
     bibleReference: "Salmo 4:8",
-    body: "Mi Dios, la casa está en silencio, pero mis pensamientos siguen despiertos. Recuerdo pendientes, conversaciones y temores que durante el día intento apartar. Te entrego esta noche sin exigirme dormir por la fuerza. Ayúdame a cuidar mis hábitos, buscar atención si la necesito y soltar lo que no puede resolverse a estas horas. Que mi cama deje de ser un lugar de batalla con el mañana. Si despierto varias veces, recuérdame que puedo volver a descansar en Tu presencia. Padre, concede reposo a mi cuerpo y calma a mi mente. Amén.",
+    body: "Mi Dios, la casa está en silencio, pero mis pensamientos siguen despiertos. Recuerdo pendientes, conversaciones y temores que durante el día intento apartar. Te entrego esta noche sin exigirme dormir por la fuerza. Ayúdame a cuidar mis hábitos, buscar atención si la necesito y soltar lo que no puede resolverse a estas horas. Que mi cama deje de ser un lugar de batalla con el mañana. Si despierto varias veces, recuérdame que puedo volver a descansar en Tu presencia. Padre, concede reposo a mi cuerpo y calma a mi mente. En el nombre de Jesús. Amén.",
   },
   {
     id: 39,
@@ -361,7 +361,7 @@ export const prayers: Prayer[] = [
     topic: "Salud y bienestar",
     lifeStage: "Todas las edades",
     bibleReference: "Salmo 139:14",
-    body: "Señor Jesús, Tú conoces mi vida entera, no solo la discapacidad que otros ven primero. Gracias por mis capacidades, mis deseos y mi derecho a participar plenamente. Dame valentía para pedir accesibilidad sin sentir que estoy solicitando un favor indebido. Rodéame de personas que me escuchen en lugar de decidir por mí. Cuando enfrente barreras o comentarios hirientes, fortalece mi paciencia sin quitarme la voz para reclamar respeto. Ayúdame a cuidar mi salud y a celebrar mis logros. Que nunca confunda mis limitaciones con falta de valor delante de Ti. Amén.",
+    body: "Señor Jesús, Tú conoces mi vida entera, no solo la discapacidad que otros ven primero. Gracias por mis capacidades, mis deseos y mi derecho a participar plenamente. Dame valentía para pedir accesibilidad sin sentir que estoy solicitando un favor indebido. Rodéame de personas que me escuchen en lugar de decidir por mí. Cuando enfrente barreras o comentarios hirientes, fortalece mi paciencia sin quitarme la voz para reclamar respeto. Ayúdame a cuidar mi salud y a celebrar mis logros. Que nunca confunda mis limitaciones con falta de valor delante de Ti. En el nombre de Cristo Jesús. Amén.",
   },
   {
     id: 40,
@@ -370,7 +370,7 @@ export const prayers: Prayer[] = [
     topic: "Salud y bienestar",
     lifeStage: "Todas las edades",
     bibleReference: "Gálatas 6:2",
-    body: "Padre Celestial, conozco los horarios de medicamentos, las noches interrumpidas y el temor de no estar haciendo suficiente. Amo a esta persona, pero hay momentos en que estoy exhausta. Perdóname cuando me juzgo por necesitar un descanso. Abre caminos para recibir ayuda confiable y dame sabiduría en las decisiones de cuidado. Protege mi salud física y emocional; enséñame a acompañar sin perderme por completo. Que la persona a quien cuido se sienta digna y amada, no una carga. Sostennos a ambos con Tu misericordia. Amén.",
+    body: "Padre Celestial, conozco los horarios de medicamentos, las noches interrumpidas y el temor de no estar haciendo suficiente. Amo a esta persona, pero hay momentos en que estoy exhausta. Perdóname cuando me juzgo por necesitar un descanso. Abre caminos para recibir ayuda confiable y dame sabiduría en las decisiones de cuidado. Protege mi salud física y emocional; enséñame a acompañar sin perderme por completo. Que la persona a quien cuido se sienta digna y amada, no una carga. Sostennos a ambos con Tu misericordia. En el nombre de Jesús. Amén.",
   },
   {
     id: 41,
@@ -388,7 +388,7 @@ export const prayers: Prayer[] = [
     topic: "Trabajo y propósito",
     lifeStage: "Adulta",
     bibleReference: "Marcos 6:31",
-    body: "Señor Jesús, mi agenda está llena y mi alma empieza a quedarse vacía. A veces confundo productividad con valor personal y descanso con pereza. Muéstrame qué debo terminar, qué puedo delegar y qué necesito dejar de hacer. Dame valor para establecer límites sin abandonar mis responsabilidades. Quiero trabajar con excelencia, pero también tener fuerzas para orar, compartir con quienes amo y disfrutar la vida. Que mi éxito no se construya a costa de mi salud o de mi paz. Enséñame a recibir el descanso como un regalo. Amén.",
+    body: "Señor Jesús, mi agenda está llena y mi alma empieza a quedarse vacía. A veces confundo productividad con valor personal y descanso con pereza. Muéstrame qué debo terminar, qué puedo delegar y qué necesito dejar de hacer. Dame valor para establecer límites sin abandonar mis responsabilidades. Quiero trabajar con excelencia, pero también tener fuerzas para orar, compartir con quienes amo y disfrutar la vida. Que mi éxito no se construya a costa de mi salud o de mi paz. Enséñame a recibir el descanso como un regalo. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 43,
@@ -406,7 +406,7 @@ export const prayers: Prayer[] = [
     topic: "Trabajo y propósito",
     lifeStage: "Adulta",
     bibleReference: "Miqueas 6:8",
-    body: "Dios de justicia, me has permitido influir en decisiones que afectan a otras personas. No quiero usar mi posición para alimentar el ego ni para esconder inseguridades. Dame valentía para actuar con justicia, humildad para reconocer errores y sabiduría para escuchar a quienes tienen menos poder que yo. Ayúdame a tomar decisiones difíciles sin deshumanizar a nadie. Que mi autoridad proteja, forme y abra oportunidades, en lugar de intimidar. Cuando reciba elogios, recuérdame la responsabilidad que acompaña al liderazgo. Señor, guía mis manos y mis palabras. Amén.",
+    body: "Dios de justicia, me has permitido influir en decisiones que afectan a otras personas. No quiero usar mi posición para alimentar el ego ni para esconder inseguridades. Dame valentía para actuar con justicia, humildad para reconocer errores y sabiduría para escuchar a quienes tienen menos poder que yo. Ayúdame a tomar decisiones difíciles sin deshumanizar a nadie. Que mi autoridad proteja, forme y abra oportunidades, en lugar de intimidar. Cuando reciba elogios, recuérdame la responsabilidad que acompaña al liderazgo. En el nombre de Cristo Jesús, guía mis manos y mis palabras. Amén.",
   },
   {
     id: 45,
@@ -424,7 +424,7 @@ export const prayers: Prayer[] = [
     topic: "Trabajo y propósito",
     lifeStage: "Adulta",
     bibleReference: "Colosenses 3:23",
-    body: "Señor Jesús, antes de comenzar este turno pongo delante de Ti a cada paciente que encontraré. Algunos tendrán miedo, otros dolor, otros quizá no tengan a nadie que los visite. Dame atención para notar lo importante, paciencia en los momentos difíciles y humildad para pedir apoyo cuando lo necesite. Cuida mis manos, mis decisiones y mi salud. Que nunca pierda de vista a la persona detrás de cada expediente. Al terminar, ayúdame a dejar en Tus manos lo que no pude resolver y a regresar a casa con paz. Amén.",
+    body: "Señor Jesús, antes de comenzar este turno pongo delante de Ti a cada paciente que encontraré. Algunos tendrán miedo, otros dolor, otros quizá no tengan a nadie que los visite. Dame atención para notar lo importante, paciencia en los momentos difíciles y humildad para pedir apoyo cuando lo necesite. Cuida mis manos, mis decisiones y mi salud. Que nunca pierda de vista a la persona detrás de cada expediente. Al terminar, ayúdame a dejar en Tus manos lo que no pude resolver y a regresar a casa con paz. En el nombre de Jesús. Amén.",
   },
   {
     id: 47,
@@ -451,7 +451,7 @@ export const prayers: Prayer[] = [
     topic: "Trabajo y propósito",
     lifeStage: "Adulta",
     bibleReference: "Efesios 2:10",
-    body: "Mi Creador, veo a otras mujeres avanzar y me pregunto si llegué tarde a descubrir para qué estoy aquí. Perdóname por pensar que mi vida solo cuenta cuando logro algo visible. Muéstrame necesidades reales que pueda atender con los dones y recursos que tengo. Dame curiosidad para aprender, valentía para intentar y paciencia para crecer sin comparaciones. Si mi propósito cambia con los años, ayúdame a recibir esa nueva etapa. Quiero vivir con intención, servir con alegría y recordar que mi valor no depende de un título. Amén.",
+    body: "Mi Creador, veo a otras mujeres avanzar y me pregunto si llegué tarde a descubrir para qué estoy aquí. Perdóname por pensar que mi vida solo cuenta cuando logro algo visible. Muéstrame necesidades reales que pueda atender con los dones y recursos que tengo. Dame curiosidad para aprender, valentía para intentar y paciencia para crecer sin comparaciones. Si mi propósito cambia con los años, ayúdame a recibir esa nueva etapa. Quiero vivir con intención, servir con alegría y recordar que mi valor no depende de un título. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 50,
@@ -469,7 +469,7 @@ export const prayers: Prayer[] = [
     topic: "Juventud y crecimiento",
     lifeStage: "Adolescente",
     bibleReference: "Salmo 140:1",
-    body: "Señor Jesús, hay palabras que escucho en la escuela y que sigo oyendo dentro de mi cabeza al llegar a casa. Me avergüenza contar lo que pasa, pero necesito ayuda. Dame valentía para hablar con adultos confiables y no creer las burlas de quienes intentan humillarme. Protégeme de la violencia y guía a quienes pueden intervenir para que lo hagan con seriedad. Ayúdame a encontrar amistades seguras y a recordar mis capacidades. No quiero que la crueldad de otros escriba la historia de quién soy. Padre, acompáñame mañana. Amén.",
+    body: "Señor Jesús, hay palabras que escucho en la escuela y que sigo oyendo dentro de mi cabeza al llegar a casa. Me avergüenza contar lo que pasa, pero necesito ayuda. Dame valentía para hablar con adultos confiables y no creer las burlas de quienes intentan humillarme. Protégeme de la violencia y guía a quienes pueden intervenir para que lo hagan con seriedad. Ayúdame a encontrar amistades seguras y a recordar mis capacidades. No quiero que la crueldad de otros escriba la historia de quién soy. Padre, acompáñame mañana. En el nombre de Yeshúa. Amén.",
   },
   {
     id: 52,
@@ -505,7 +505,7 @@ export const prayers: Prayer[] = [
     topic: "Juventud y crecimiento",
     lifeStage: "Joven adulta",
     bibleReference: "Eclesiastés 3:11",
-    body: "Señor Jesús, escucho preguntas sobre cuándo me casaré y a veces siento que mi vida está atrasada. Recuérdame que no existe una fecha universal para amar, crecer o construir un hogar. Dame paz para conocerme, prepararme y disfrutar mis relaciones presentes. Si deseo casarme algún día, enséñame a elegir con sabiduría y no por presión. Que no idealice el matrimonio ni desprecie la soltería. Quiero vivir este tiempo con gratitud y propósito, sin entregar mis decisiones a las expectativas ajenas. Amén.",
+    body: "Señor Jesús, escucho preguntas sobre cuándo me casaré y a veces siento que mi vida está atrasada. Recuérdame que no existe una fecha universal para amar, crecer o construir un hogar. Dame paz para conocerme, prepararme y disfrutar mis relaciones presentes. Si deseo casarme algún día, enséñame a elegir con sabiduría y no por presión. Que no idealice el matrimonio ni desprecie la soltería. Quiero vivir este tiempo con gratitud y propósito, sin entregar mis decisiones a las expectativas ajenas. En el nombre de Jesús. Amén.",
   },
   {
     id: 56,
@@ -523,7 +523,7 @@ export const prayers: Prayer[] = [
     topic: "Juventud y crecimiento",
     lifeStage: "Adolescente",
     bibleReference: "Proverbios 13:20",
-    body: "Mi Creador, deseo tener amigas con quienes reír y hablar sin temor a ser humillada. Ayúdame a reconocer la diferencia entre pertenecer y tener que traicionarme para encajar. Dame fuerza para alejarme de la presión que me lleva a lastimar a otros o a ponerme en peligro. Enséñame también a ser una amiga leal: que no divulgue secretos, que pida perdón y que sepa escuchar. Si hoy me siento sola, abre caminos hacia relaciones sanas. No permitas que la necesidad de aceptación decida por mí. Amén.",
+    body: "Mi Creador, deseo tener amigas con quienes reír y hablar sin temor a ser humillada. Ayúdame a reconocer la diferencia entre pertenecer y tener que traicionarme para encajar. Dame fuerza para alejarme de la presión que me lleva a lastimar a otros o a ponerme en peligro. Enséñame también a ser una amiga leal: que no divulgue secretos, que pida perdón y que sepa escuchar. Si hoy me siento sola, abre caminos hacia relaciones sanas. No permitas que la necesidad de aceptación decida por mí. En el nombre de Cristo Jesús. Amén.",
   },
   {
     id: 58,
@@ -532,7 +532,7 @@ export const prayers: Prayer[] = [
     topic: "Juventud y crecimiento",
     lifeStage: "Joven adulta",
     bibleReference: "Mateo 6:34",
-    body: "Padre Celestial, me preguntan qué haré con mi vida y siento que debo tener todas las respuestas ahora. Tú sabes cuánto me inquieta equivocarme. Dame sabiduría para planear sin convertir cada decisión en una amenaza. Ayúdame a trabajar con lo que tengo hoy, pedir consejo y aceptar que algunos caminos se aclaran al caminar. Cuando mire a otros avanzar más rápido, protégeme de la desesperación. No quiero desperdiciar mi juventud viviendo en el temor de un mañana que aún no llega. Señor, guía mis pasos. Amén.",
+    body: "Padre Celestial, me preguntan qué haré con mi vida y siento que debo tener todas las respuestas ahora. Tú sabes cuánto me inquieta equivocarme. Dame sabiduría para planear sin convertir cada decisión en una amenaza. Ayúdame a trabajar con lo que tengo hoy, pedir consejo y aceptar que algunos caminos se aclaran al caminar. Cuando mire a otros avanzar más rápido, protégeme de la desesperación. No quiero desperdiciar mi juventud viviendo en el temor de un mañana que aún no llega. Señor Jesús, guía mis pasos. Amén.",
   },
   {
     id: 59,
@@ -541,7 +541,7 @@ export const prayers: Prayer[] = [
     topic: "Duelo y pérdidas",
     lifeStage: "Todas las edades",
     bibleReference: "Apocalipsis 21:4",
-    body: "Señor Jesús, hay días en que todavía quiero llamar a mi madre y contarle algo pequeño. Su ausencia aparece en fechas importantes y en momentos ordinarios. Gracias por lo bueno que recibí de ella y ayúdame a mirar con honestidad también lo que fue difícil. No quiero que el duelo me obligue a inventar una historia perfecta ni que el dolor borre el amor. Acompáñame cuando extrañe su voz y cuando necesite aprender a tomar decisiones sin consultarla. Recibe mis lágrimas y sostenme con esperanza. Amén.",
+    body: "Señor Jesús, hay días en que todavía quiero llamar a mi madre y contarle algo pequeño. Su ausencia aparece en fechas importantes y en momentos ordinarios. Gracias por lo bueno que recibí de ella y ayúdame a mirar con honestidad también lo que fue difícil. No quiero que el duelo me obligue a inventar una historia perfecta ni que el dolor borre el amor. Acompáñame cuando extrañe su voz y cuando necesite aprender a tomar decisiones sin consultarla. Recibe mis lágrimas y sostenme con esperanza. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 60,
@@ -550,7 +550,7 @@ export const prayers: Prayer[] = [
     topic: "Duelo y pérdidas",
     lifeStage: "Todas las edades",
     bibleReference: "Salmo 73:26",
-    body: "Padre Celestial, la muerte de mi padre dejó preguntas, recuerdos y una sensación extraña de que algo de mi historia cambió. Tú sabes si nuestra relación fue cercana, complicada o llena de palabras pendientes. Te entrego lo que agradezco y lo que todavía me duele. Ayúdame a no negar mis emociones ni compararlas con las de mis hermanos. Cuando aparezca el deseo de escuchar un consejo suyo, dame serenidad y personas sabias con quienes hablar. Sostén mi corazón en esta ausencia y enséñame a seguir viviendo con ternura. Amén.",
+    body: "Padre Celestial, la muerte de mi padre dejó preguntas, recuerdos y una sensación extraña de que algo de mi historia cambió. Tú sabes si nuestra relación fue cercana, complicada o llena de palabras pendientes. Te entrego lo que agradezco y lo que todavía me duele. Ayúdame a no negar mis emociones ni compararlas con las de mis hermanos. Cuando aparezca el deseo de escuchar un consejo suyo, dame serenidad y personas sabias con quienes hablar. Sostén mi corazón en esta ausencia y enséñame a seguir viviendo con ternura. En el nombre de Jesús. Amén.",
   },
   {
     id: 61,
@@ -568,7 +568,7 @@ export const prayers: Prayer[] = [
     topic: "Duelo y pérdidas",
     lifeStage: "Adulta",
     bibleReference: "Salmo 34:18",
-    body: "Padre Misericordioso, mi corazón se había llenado de nombres, planes y esperanzas que ahora me cuesta pronunciar. Aunque otros no hayan conocido a este bebé, mi dolor es real. No permitas que comentarios apresurados minimicen lo que he perdido. Ayúdame a cuidar mi cuerpo, recibir atención médica y hablar con alguien que sepa escuchar. Si mi mente busca culpables, dame verdad y misericordia. No sé cuándo volveré a sentirme tranquila, pero hoy te pido compañía en este duelo. Recibe el amor que no tuve tiempo de expresar en brazos. Amén.",
+    body: "Padre Misericordioso, mi corazón se había llenado de nombres, planes y esperanzas que ahora me cuesta pronunciar. Aunque otros no hayan conocido a este bebé, mi dolor es real. No permitas que comentarios apresurados minimicen lo que he perdido. Ayúdame a cuidar mi cuerpo, recibir atención médica y hablar con alguien que sepa escuchar. Si mi mente busca culpables, dame verdad y misericordia. No sé cuándo volveré a sentirme tranquila, pero hoy te pido compañía en este duelo. Recibe el amor que no tuve tiempo de expresar en brazos. En el nombre de Cristo Jesús. Amén.",
   },
   {
     id: 63,
@@ -586,7 +586,7 @@ export const prayers: Prayer[] = [
     topic: "Duelo y pérdidas",
     lifeStage: "Adulta mayor",
     bibleReference: "Eclesiastés 3:1-4",
-    body: "Dios Eterno, con los años he despedido a personas que conocían mis historias sin necesidad de explicaciones. Cada ausencia parece llevarse una parte de mi juventud. Gracias por las conversaciones, las visitas y las risas que compartimos. Ayúdame a honrar esos recuerdos sin cerrar la puerta a nuevas amistades. Dame valor para llamar a alguien, aceptar una invitación y seguir participando en la vida. Cuando sienta que mi mundo se hace pequeño, recuérdame que todavía puedo amar y ser amada. Sostén mi corazón en esta etapa. Amén.",
+    body: "Dios Eterno, con los años he despedido a personas que conocían mis historias sin necesidad de explicaciones. Cada ausencia parece llevarse una parte de mi juventud. Gracias por las conversaciones, las visitas y las risas que compartimos. Ayúdame a honrar esos recuerdos sin cerrar la puerta a nuevas amistades. Dame valor para llamar a alguien, aceptar una invitación y seguir participando en la vida. Cuando sienta que mi mundo se hace pequeño, recuérdame que todavía puedo amar y ser amada. Sostén mi corazón en esta etapa. En el nombre de Jesús. Amén.",
   },
   {
     id: 65,
@@ -595,7 +595,7 @@ export const prayers: Prayer[] = [
     topic: "Duelo y pérdidas",
     lifeStage: "Todas las edades",
     bibleReference: "Deuteronomio 31:8",
-    body: "Señor Jesús, alguien se fue sin darme la explicación que yo necesitaba. Mi mente repasa conversaciones buscando una respuesta escondida. Te pido libertad para aceptar que quizá nunca comprenderé todo. Muéstrame si debo aprender algo, pedir perdón por mi parte o simplemente dejar de perseguir una puerta cerrada. Guarda mi dignidad cuando sienta deseos de suplicar atención. Ayúdame a llorar lo que terminó sin concluir que nada bueno volverá a comenzar. Mi historia continúa delante de Ti. Amén.",
+    body: "Señor Jesús, alguien se fue sin darme la explicación que yo necesitaba. Mi mente repasa conversaciones buscando una respuesta escondida. Te pido libertad para aceptar que quizá nunca comprenderé todo. Muéstrame si debo aprender algo, pedir perdón por mi parte o simplemente dejar de perseguir una puerta cerrada. Guarda mi dignidad cuando sienta deseos de suplicar atención. Ayúdame a llorar lo que terminó sin concluir que nada bueno volverá a comenzar. Mi historia continúa delante de Ti. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 66,
@@ -613,7 +613,7 @@ export const prayers: Prayer[] = [
     topic: "Fe y vida espiritual",
     lifeStage: "Todas las edades",
     bibleReference: "Salmo 27:14",
-    body: "Jehová, hay peticiones que llevo mucho tiempo presentándote y todavía no veo la respuesta que deseo. A veces confundo Tu silencio con indiferencia. Enséñame a esperar sin dejar de vivir, a actuar con responsabilidad y a reconocer que no todo retraso es rechazo. Si mi petición necesita cambiar, transforma también mi corazón. Si debo continuar, renueva mis fuerzas. Creo que escuchas mis oraciones, pero no quiero convertir mi fe en una exigencia sobre Tu tiempo. Padre, dame paciencia y un corazón dispuesto a confiar. Amén.",
+    body: "Jehová, hay peticiones que llevo mucho tiempo presentándote y todavía no veo la respuesta que deseo. A veces confundo Tu silencio con indiferencia. Enséñame a esperar sin dejar de vivir, a actuar con responsabilidad y a reconocer que no todo retraso es rechazo. Si mi petición necesita cambiar, transforma también mi corazón. Si debo continuar, renueva mis fuerzas. Creo que escuchas mis oraciones, pero no quiero convertir mi fe en una exigencia sobre Tu tiempo. Padre, dame paciencia y un corazón dispuesto a confiar. En el nombre de Yeshúa. Amén.",
   },
   {
     id: 68,
@@ -649,7 +649,7 @@ export const prayers: Prayer[] = [
     topic: "Fe y vida espiritual",
     lifeStage: "Todas las edades",
     bibleReference: "Juan 15:5",
-    body: "Señor Jesús, no quiero conocerte solo por lo que otros cuentan de Ti. Deseo escuchar Tus enseñanzas, examinar mi vida a la luz de Tu Palabra y aprender a seguirte con sinceridad. Corrige mis prejuicios, mi orgullo y las costumbres que me alejan del amor y la verdad. Dame constancia para leer, orar y poner en práctica lo que aprendo. Que mi fe no sea una apariencia pública ni una colección de frases, sino una relación que transforme mi trato con las personas. Acércame más a Ti cada día. Amén.",
+    body: "Señor Jesús, no quiero conocerte solo por lo que otros cuentan de Ti. Deseo escuchar Tus enseñanzas, examinar mi vida a la luz de Tu Palabra y aprender a seguirte con sinceridad. Corrige mis prejuicios, mi orgullo y las costumbres que me alejan del amor y la verdad. Dame constancia para leer, orar y poner en práctica lo que aprendo. Que mi fe no sea una apariencia pública ni una colección de frases, sino una relación que transforme mi trato con las personas. Acércame más a Ti cada día. En el nombre de Jesús. Amén.",
   },
   {
     id: 72,
@@ -694,7 +694,7 @@ export const prayers: Prayer[] = [
     topic: "Identidad y pertenencia",
     lifeStage: "Todas las edades",
     bibleReference: "Levítico 19:34",
-    body: "Padre de Abraham, conozco el dolor de amar dos lugares y sentirme a veces extraña en ambos. Extraño mi idioma, mis comidas, mi familia y las calles que conocía de memoria. Te pido protección en este país, personas que me traten con dignidad y sabiduría para aprender sin perder mis raíces. Ayúdame a enfrentar los trámites, el trabajo y las diferencias culturales con paciencia. Cuando la nostalgia me visite, recuérdame que puedo construir pertenencia sin olvidar de dónde vengo. Señor, acompaña también a quienes dejé atrás. Amén.",
+    body: "Padre de Abraham, conozco el dolor de amar dos lugares y sentirme a veces extraña en ambos. Extraño mi idioma, mis comidas, mi familia y las calles que conocía de memoria. Te pido protección en este país, personas que me traten con dignidad y sabiduría para aprender sin perder mis raíces. Ayúdame a enfrentar los trámites, el trabajo y las diferencias culturales con paciencia. Cuando la nostalgia me visite, recuérdame que puedo construir pertenencia sin olvidar de dónde vengo. Señor Jesús, acompaña también a quienes dejé atrás. Amén.",
   },
   {
     id: 77,
@@ -703,7 +703,7 @@ export const prayers: Prayer[] = [
     topic: "Identidad y pertenencia",
     lifeStage: "Todas las edades",
     bibleReference: "Salmo 91:1-2",
-    body: "Dios Misericordioso, he dejado atrás más de lo que cabe en una maleta. Conozco el miedo de huir y la incertidumbre de no saber dónde dormiré mañana. Te pido un lugar seguro, alimento, atención y personas que respeten mi humanidad. Protege a quienes viajan conmigo y a quienes quedaron lejos. Ayúdame a contar mi historia sin que otros me reduzcan a una tragedia. Dame fuerzas para aprender, trabajar y reconstruir un futuro. Aunque haya perdido mi casa, no permitas que pierda la esperanza de volver a sentirme en paz. Amén.",
+    body: "Dios Misericordioso, he dejado atrás más de lo que cabe en una maleta. Conozco el miedo de huir y la incertidumbre de no saber dónde dormiré mañana. Te pido un lugar seguro, alimento, atención y personas que respeten mi humanidad. Protege a quienes viajan conmigo y a quienes quedaron lejos. Ayúdame a contar mi historia sin que otros me reduzcan a una tragedia. Dame fuerzas para aprender, trabajar y reconstruir un futuro. Aunque haya perdido mi casa, no permitas que pierda la esperanza de volver a sentirme en paz. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 78,
@@ -721,7 +721,7 @@ export const prayers: Prayer[] = [
     topic: "Identidad y pertenencia",
     lifeStage: "Todas las edades",
     bibleReference: "Gálatas 3:28",
-    body: "Dios de justicia, Tú conoces las puertas que me cerraron por mi color de piel, mi origen, mi acento o mi condición. No permitas que el desprecio de otros se convierta en odio dentro de mí. Dame valentía para denunciar lo injusto, sabiduría para buscar apoyo y fortaleza para seguir construyendo mi camino. Ayúdame a reconocer también mis propios prejuicios y a tratar a cada persona con dignidad. No quiero que mi dolor me robe la compasión, pero tampoco quiero llamar paz al silencio ante el abuso. Guía mis pasos, Señor. Amén.",
+    body: "Dios de justicia, Tú conoces las puertas que me cerraron por mi color de piel, mi origen, mi acento o mi condición. No permitas que el desprecio de otros se convierta en odio dentro de mí. Dame valentía para denunciar lo injusto, sabiduría para buscar apoyo y fortaleza para seguir construyendo mi camino. Ayúdame a reconocer también mis propios prejuicios y a tratar a cada persona con dignidad. No quiero que mi dolor me robe la compasión, pero tampoco quiero llamar paz al silencio ante el abuso. Guía mis pasos, en el nombre de Cristo Jesús. Amén.",
   },
   {
     id: 80,
@@ -730,7 +730,7 @@ export const prayers: Prayer[] = [
     topic: "Identidad y pertenencia",
     lifeStage: "Todas las edades",
     bibleReference: "Romanos 15:7",
-    body: "Señor Jesús, he buscado un lugar donde acercarme a Ti y he encontrado miradas o palabras que me hicieron sentir fuera. Tú sabes lo que sucedió y cuánto me dolió. Ayúdame a distinguir entre Tu verdad y los errores de quienes dicen representarte. Dame discernimiento para encontrar una comunidad donde haya respeto, responsabilidad y amor sincero. Sana mi temor de volver a confiar sin pedirme que ignore lo que fue dañino. Quiero conocerte por Tu Palabra y caminar con personas que también estén dispuestas a aprender. Amén.",
+    body: "Señor Jesús, he buscado un lugar donde acercarme a Ti y he encontrado miradas o palabras que me hicieron sentir fuera. Tú sabes lo que sucedió y cuánto me dolió. Ayúdame a distinguir entre Tu verdad y los errores de quienes dicen representarte. Dame discernimiento para encontrar una comunidad donde haya respeto, responsabilidad y amor sincero. Sana mi temor de volver a confiar sin pedirme que ignore lo que fue dañino. Quiero conocerte por Tu Palabra y caminar con personas que también estén dispuestas a aprender. En el nombre de Jesús. Amén.",
   },
   {
     id: 81,
@@ -748,7 +748,7 @@ export const prayers: Prayer[] = [
     topic: "Identidad y pertenencia",
     lifeStage: "Todas las edades",
     bibleReference: "Lucas 7:47-50",
-    body: "Señor Jesús, Tú conoces mi historia más allá de las etiquetas que otros me han puesto. Sabes las decisiones, las necesidades, las heridas y las circunstancias que me trajeron hasta aquí. No permitas que la vergüenza me impida buscar ayuda o acercarme a Ti. Si estoy en peligro o bajo explotación, abre una salida segura y personas confiables que me acompañen sin juzgarme. Dame oportunidades dignas, recursos y fuerza para reconstruir mi vida. Enséñame a reconocer mi valor sin reducirme a mi pasado. Recibe mi oración con misericordia. Amén.",
+    body: "Señor Jesús, Tú conoces mi historia más allá de las etiquetas que otros me han puesto. Sabes las decisiones, las necesidades, las heridas y las circunstancias que me trajeron hasta aquí. No permitas que la vergüenza me impida buscar ayuda o acercarme a Ti. Si estoy en peligro o bajo explotación, abre una salida segura y personas confiables que me acompañen sin juzgarme. Dame oportunidades dignas, recursos y fuerza para reconstruir mi vida. Enséñame a reconocer mi valor sin reducirme a mi pasado. Recibe mi oración con misericordia. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 83,
@@ -766,7 +766,7 @@ export const prayers: Prayer[] = [
     topic: "Identidad y pertenencia",
     lifeStage: "Todas las edades",
     bibleReference: "Juan 8:36",
-    body: "Señor Jesús, hay algo que ha empezado a gobernar mis decisiones y a lastimar mi cuerpo, mi familia o mi paz. He prometido cambiar y me he sentido derrotada al volver a caer. Hoy te pido valentía para reconocer el problema y buscar tratamiento, acompañamiento y apoyo responsable. Ayúdame a decir la verdad a quienes pueden ayudarme y a tomar distancia de situaciones que me arrastran. Si tropiezo, no permitas que la vergüenza me haga abandonar la recuperación. Dame perseverancia para reconstruir mi vida paso a paso. Amén.",
+    body: "Señor Jesús, hay algo que ha empezado a gobernar mis decisiones y a lastimar mi cuerpo, mi familia o mi paz. He prometido cambiar y me he sentido derrotada al volver a caer. Hoy te pido valentía para reconocer el problema y buscar tratamiento, acompañamiento y apoyo responsable. Ayúdame a decir la verdad a quienes pueden ayudarme y a tomar distancia de situaciones que me arrastran. Si tropiezo, no permitas que la vergüenza me haga abandonar la recuperación. Dame perseverancia para reconstruir mi vida paso a paso. En el nombre de Jesús. Amén.",
   },
   {
     id: 85,
@@ -775,7 +775,7 @@ export const prayers: Prayer[] = [
     topic: "Identidad y pertenencia",
     lifeStage: "Todas las edades",
     bibleReference: "Salmo 34:6",
-    body: "Jehová, hoy me preocupa lo más básico: comida, vivienda, transporte y el bienestar de quienes dependen de mí. Tú sabes lo cansado que es hacer cuentas cuando nunca alcanzan. Te pido provisión y oportunidades dignas; guía mis decisiones y pon ayuda honesta a mi alcance. Protégeme de quienes se aprovechan de la necesidad. No permitas que la escasez me convenza de que valgo menos que otras personas. Dame fuerzas para seguir buscando soluciones y sensibilidad para aceptar apoyo. Señor, acompáñame en esta lucha concreta. Amén.",
+    body: "Jehová, hoy me preocupa lo más básico: comida, vivienda, transporte y el bienestar de quienes dependen de mí. Tú sabes lo cansado que es hacer cuentas cuando nunca alcanzan. Te pido provisión y oportunidades dignas; guía mis decisiones y pon ayuda honesta a mi alcance. Protégeme de quienes se aprovechan de la necesidad. No permitas que la escasez me convenza de que valgo menos que otras personas. Dame fuerzas para seguir buscando soluciones y sensibilidad para aceptar apoyo. Señor Jesús, acompáñame en esta lucha concreta. Amén.",
   },
   {
     id: 86,
@@ -784,7 +784,7 @@ export const prayers: Prayer[] = [
     topic: "Gratitud y gozo",
     lifeStage: "Todas las edades",
     bibleReference: "Salmo 90:12",
-    body: "Padre Creador del Universo, hoy agradezco un año más de vida. No todos los días fueron fáciles, pero cada uno forma parte de mi historia. Gracias por las personas que permanecieron, las lecciones que me transformaron y las oportunidades que todavía tengo delante. Ayúdame a no temerle al número de mis años ni a vivir lamentando lo que no hice. Dame sabiduría para aprovechar el tiempo, amar con intención y cuidar mi salud. Que este nuevo año no sea solo una lista de deseos, sino una oportunidad para vivir con gratitud. Amén.",
+    body: "Padre Creador del Universo, hoy agradezco un año más de vida. No todos los días fueron fáciles, pero cada uno forma parte de mi historia. Gracias por las personas que permanecieron, las lecciones que me transformaron y las oportunidades que todavía tengo delante. Ayúdame a no temerle al número de mis años ni a vivir lamentando lo que no hice. Dame sabiduría para aprovechar el tiempo, amar con intención y cuidar mi salud. Que este nuevo año no sea solo una lista de deseos, sino una oportunidad para vivir con gratitud. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 87,
@@ -793,7 +793,7 @@ export const prayers: Prayer[] = [
     topic: "Gratitud y gozo",
     lifeStage: "Todas las edades",
     bibleReference: "Santiago 1:17",
-    body: "Mi Dios, hoy quiero detenerme a reconocer lo que suelo dar por sentado: agua limpia, una conversación amable, un momento de silencio, la luz entrando por la ventana. Perdóname por vivir tan pendiente de lo que falta que olvido lo que ya está presente. Abre mis ojos a la belleza sencilla sin negar los problemas reales que debo enfrentar. Enséñame a disfrutar sin culpa y a compartir cuando tenga más de lo necesario. Que mi gratitud no dependa de acontecimientos extraordinarios. Gracias por acompañarme también en los días comunes. Amén.",
+    body: "Mi Dios, hoy quiero detenerme a reconocer lo que suelo dar por sentado: agua limpia, una conversación amable, un momento de silencio, la luz entrando por la ventana. Perdóname por vivir tan pendiente de lo que falta que olvido lo que ya está presente. Abre mis ojos a la belleza sencilla sin negar los problemas reales que debo enfrentar. Enséñame a disfrutar sin culpa y a compartir cuando tenga más de lo necesario. Que mi gratitud no dependa de acontecimientos extraordinarios. Gracias por acompañarme también en los días comunes. En el nombre de Jesús. Amén.",
   },
   {
     id: 88,
@@ -802,7 +802,7 @@ export const prayers: Prayer[] = [
     topic: "Gratitud y gozo",
     lifeStage: "Adulta",
     bibleReference: "Eclesiastés 3:12-13",
-    body: "Padre Celestial, durante muchos años mi tiempo perteneció a las necesidades de otros. Ahora descubro espacios para caminar, viajar, aprender y descansar. Gracias por esta libertad que llega con una mezcla de alegría y nostalgia. Líbrame de sentir culpa por disfrutarla. Ayúdame a seguir amando a mi familia sin abandonar mis propios sueños. Que mis decisiones sean responsables y mi alegría no dependa de la aprobación de nadie. Todavía hay lugares por conocer, personas por ayudar y experiencias por vivir. Señor, enséñame a recibir esta etapa como un regalo. Amén.",
+    body: "Padre Celestial, durante muchos años mi tiempo perteneció a las necesidades de otros. Ahora descubro espacios para caminar, viajar, aprender y descansar. Gracias por esta libertad que llega con una mezcla de alegría y nostalgia. Líbrame de sentir culpa por disfrutarla. Ayúdame a seguir amando a mi familia sin abandonar mis propios sueños. Que mis decisiones sean responsables y mi alegría no dependa de la aprobación de nadie. Todavía hay lugares por conocer, personas por ayudar y experiencias por vivir. Señor Jesús, enséñame a recibir esta etapa como un regalo. Amén.",
   },
   {
     id: 89,
@@ -811,7 +811,7 @@ export const prayers: Prayer[] = [
     topic: "Gratitud y gozo",
     lifeStage: "Todas las edades",
     bibleReference: "1 Tesalonicenses 5:18",
-    body: "Dios Misericordioso, hoy conviven en mí la tristeza y el agradecimiento. No quiero fingir que el dolor desapareció, pero tampoco quiero negar las bondades que todavía puedo reconocer. Gracias por quien me escuchó, por la fuerza que tuve para levantarme y por las pequeñas pausas de paz en medio de días difíciles. Enséñame que agradecer no significa llamar bueno a lo que me hizo daño. Puedo llorar y seguir confiando; puedo lamentar una pérdida y agradecer el amor que conocí. Recibe mi corazón entero, Señor. Amén.",
+    body: "Dios Misericordioso, hoy conviven en mí la tristeza y el agradecimiento. No quiero fingir que el dolor desapareció, pero tampoco quiero negar las bondades que todavía puedo reconocer. Gracias por quien me escuchó, por la fuerza que tuve para levantarme y por las pequeñas pausas de paz en medio de días difíciles. Enséñame que agradecer no significa llamar bueno a lo que me hizo daño. Puedo llorar y seguir confiando; puedo lamentar una pérdida y agradecer el amor que conocí. Recibe mi corazón entero, en el nombre de Cristo Jesús. Amén.",
   },
   {
     id: 90,
@@ -820,7 +820,7 @@ export const prayers: Prayer[] = [
     topic: "Relaciones y matrimonio",
     lifeStage: "Adulta",
     bibleReference: "Proverbios 4:23",
-    body: "Señor Jesús, me cuesta decir no porque temo que me llamen egoísta o ingrata. He aceptado responsabilidades y tratos que me dejan agotada. Dame claridad para reconocer dónde termina mi deber y dónde comienza la decisión de otra persona. Enséñame a hablar con firmeza sin humillar, a sostener límites sin vengarme y a aceptar que algunos se molestarán cuando deje de complacerlos. Quiero amar con generosidad, no desde el miedo. Guarda mi corazón para que la paz no sea una apariencia comprada con mi silencio. Amén.",
+    body: "Señor Jesús, me cuesta decir no porque temo que me llamen egoísta o ingrata. He aceptado responsabilidades y tratos que me dejan agotada. Dame claridad para reconocer dónde termina mi deber y dónde comienza la decisión de otra persona. Enséñame a hablar con firmeza sin humillar, a sostener límites sin vengarme y a aceptar que algunos se molestarán cuando deje de complacerlos. Quiero amar con generosidad, no desde el miedo. Guarda mi corazón para que la paz no sea una apariencia comprada con mi silencio. En el nombre de Jesús. Amén.",
   },
   {
     id: 91,
@@ -829,7 +829,7 @@ export const prayers: Prayer[] = [
     topic: "Relaciones y matrimonio",
     lifeStage: "Adulta",
     bibleReference: "Romanos 12:18",
-    body: "Padre Celestial, amo a esta persona, pero nuestras conversaciones suelen terminar en heridas. Tú sabes lo que he intentado y lo que todavía me cuesta reconocer. Dame sabiduría para hablar con respeto, escuchar sin aceptar insultos y retirarme cuando una situación se vuelva dañina. Si debo pedir perdón, dame humildad; si debo establecer distancia, dame paz. No permitas que el deseo de mantener la familia unida me haga justificar la violencia. Quiero hacer mi parte para vivir en paz, sin intentar controlar el corazón ajeno. Amén.",
+    body: "Padre Celestial, amo a esta persona, pero nuestras conversaciones suelen terminar en heridas. Tú sabes lo que he intentado y lo que todavía me cuesta reconocer. Dame sabiduría para hablar con respeto, escuchar sin aceptar insultos y retirarme cuando una situación se vuelva dañina. Si debo pedir perdón, dame humildad; si debo establecer distancia, dame paz. No permitas que el deseo de mantener la familia unida me haga justificar la violencia. Quiero hacer mi parte para vivir en paz, sin intentar controlar el corazón ajeno. En el nombre de Jesucristo. Amén.",
   },
   {
     id: 92,
@@ -856,7 +856,7 @@ export const prayers: Prayer[] = [
     topic: "Fortaleza y perseverancia",
     lifeStage: "Todas las edades",
     bibleReference: "Isaías 43:18-19",
-    body: "Señor de los Cielos, he vivido lo suficiente para conocer mis errores, pero todavía tengo sueños que me llaman. A veces escucho que ya pasó mi tiempo y casi lo creo. Recuérdame que la experiencia puede convertirse en sabiduría y que aprender no pertenece solo a la juventud. Dame valentía para comenzar de nuevo sin negar lo que he vivido. Ayúdame a planear con prudencia, cuidar mis recursos y disfrutar el proceso. No quiero pasar los próximos años lamentando que tuve miedo de intentarlo. Padre, guía esta nueva etapa. Amén.",
+    body: "Señor de los Cielos, he vivido lo suficiente para conocer mis errores, pero todavía tengo sueños que me llaman. A veces escucho que ya pasó mi tiempo y casi lo creo. Recuérdame que la experiencia puede convertirse en sabiduría y que aprender no pertenece solo a la juventud. Dame valentía para comenzar de nuevo sin negar lo que he vivido. Ayúdame a planear con prudencia, cuidar mis recursos y disfrutar el proceso. No quiero pasar los próximos años lamentando que tuve miedo de intentarlo. Padre, guía esta nueva etapa. En el nombre de Yeshúa. Amén.",
   },
   {
     id: 95,
@@ -874,7 +874,7 @@ export const prayers: Prayer[] = [
     topic: "Fortaleza y perseverancia",
     lifeStage: "Todas las edades",
     bibleReference: "Miqueas 7:8",
-    body: "Señor Jesús, he caído más veces de las que quisiera recordar, pero todavía estoy aquí. Gracias por cada persona que me tendió la mano y por las lecciones que no habría elegido aprender. No permitas que mi resistencia se convierta en dureza ni que mi pasado me haga desconfiar de toda alegría. Dame humildad para reconocer mis límites y valentía para intentarlo nuevamente. Cuando otra mujer esté en el suelo, ayúdame a ofrecerle una mano en lugar de un juicio. Que mi historia produzca compasión. Amén.",
+    body: "Señor Jesús, he caído más veces de las que quisiera recordar, pero todavía estoy aquí. Gracias por cada persona que me tendió la mano y por las lecciones que no habría elegido aprender. No permitas que mi resistencia se convierta en dureza ni que mi pasado me haga desconfiar de toda alegría. Dame humildad para reconocer mis límites y valentía para intentarlo nuevamente. Cuando otra mujer esté en el suelo, ayúdame a ofrecerle una mano en lugar de un juicio. Que mi historia produzca compasión. En el nombre de Jesús. Amén.",
   },
   {
     id: 97,
@@ -892,7 +892,7 @@ export const prayers: Prayer[] = [
     topic: "Fe y vida espiritual",
     lifeStage: "Todas las edades",
     bibleReference: "1 Timoteo 2:1-2",
-    body: "Dios de justicia, te presento a mi país con sus alegrías y heridas. Te ruego por quienes gobiernan, por quienes trabajan, por los niños y por las familias que viven con temor. Danos líderes responsables y ciudadanos dispuestos a buscar la verdad, proteger al vulnerable y rechazar la corrupción. No permitas que las diferencias políticas nos hagan olvidar la dignidad de nuestros vecinos. Ayúdame a participar con conciencia, escuchar con respeto y actuar por el bien común. Señor, trae paz donde hay violencia y esperanza donde reina el desánimo. Amén.",
+    body: "Dios de justicia, te presento a mi país con sus alegrías y heridas. Te ruego por quienes gobiernan, por quienes trabajan, por los niños y por las familias que viven con temor. Danos líderes responsables y ciudadanos dispuestos a buscar la verdad, proteger al vulnerable y rechazar la corrupción. No permitas que las diferencias políticas nos hagan olvidar la dignidad de nuestros vecinos. Ayúdame a participar con conciencia, escuchar con respeto y actuar por el bien común. Señor Jesús, trae paz donde hay violencia y esperanza donde reina el desánimo. Amén.",
   },
   {
     id: 99,
@@ -910,7 +910,7 @@ export const prayers: Prayer[] = [
     topic: "Fe y vida espiritual",
     lifeStage: "Todas las edades",
     bibleReference: "Hebreos 4:16",
-    body: "Padre Nuestro, hoy vengo sin máscaras. Traigo gratitud y cansancio, fe y preguntas, buenas intenciones y errores que debo corregir. No quiero impresionarte con palabras elegantes; deseo hablarte con verdad. Tú conoces las partes de mí que otros aplauden y las que intento esconder. Examina mi corazón, muéstrame lo que necesita cambiar y enséñame a recibir Tu misericordia sin abusar de ella. Creo que puedo acercarme a Tu presencia con confianza por medio de Jesucristo. Gracias por escuchar esta oración sencilla y sincera. Amén.",
+    body: "Padre Nuestro, hoy vengo sin máscaras. Traigo gratitud y cansancio, fe y preguntas, buenas intenciones y errores que debo corregir. No quiero impresionarte con palabras elegantes; deseo hablarte con verdad. Tú conoces las partes de mí que otros aplauden y las que intento esconder. Examina mi corazón, muéstrame lo que necesita cambiar y enséñame a recibir Tu misericordia sin abusar de ella. Creo que puedo acercarme a Tu presencia con confianza por medio de Jesucristo. Gracias por escuchar esta oración sencilla y sincera. En el nombre de Jesús. Amén.",
   }
 ];
 
