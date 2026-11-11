@@ -21,6 +21,7 @@ const config: LibraryConfig = {
   getBySlug: getAgradecePrayerBySlug,
   detailRouteRegex: /^\/agradecemujer\/oracion\/(.+)$/i,
   introAccent: 'bg-gradient-to-r from-emerald-500 to-teal-600',
+  cardExperienceId: 'agradece',
 };
 
 export default function AgradeceMujer() {

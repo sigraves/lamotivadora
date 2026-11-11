@@ -14,6 +14,8 @@ import {
   Check,
   AlertCircle,
 } from 'lucide-react';
+import BibleCardsModal from '@/components/BibleCardsModal';
+import { getBibleCardExperience } from '@/data/bibleCards';
 import {
   prayers as allPrayers,
   prayerTopics,
@@ -61,29 +63,49 @@ function slugifyPath(pathname: string): string {
 
 /* ---------- Nav bar (shared) ---------- */
 function NavBar({ onBack }: { onBack: () => void }) {
+  const [cardsOpen, setCardsOpen] = useState(false);
+  const experience = getBibleCardExperience('ora');
+
   return (
-    <nav className="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-        <a href="/OraMujer" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-brand-gradient flex items-center justify-center shadow-md">
-            <BookOpen className="w-5 h-5 text-gold-400" />
+    <>
+      <nav className="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-2">
+          <a href="/OraMujer" className="flex items-center gap-3 min-w-0">
+            <div className="w-10 h-10 rounded-xl bg-brand-gradient flex items-center justify-center shadow-md flex-shrink-0">
+              <BookOpen className="w-5 h-5 text-gold-400" />
+            </div>
+            <div className="flex flex-col leading-none min-w-0">
+              <span className="font-serif text-lg font-bold text-brand-900 truncate">Ora Mujer</span>
+              <span className="text-xs text-gold-600 font-medium tracking-wide">
+                Biblioteca de oraciones
+              </span>
+            </div>
+          </a>
+          <div className="flex items-center gap-2 flex-shrink-0">
+            {experience && (
+              <button
+                onClick={() => setCardsOpen(true)}
+                className="inline-flex items-center gap-1.5 px-3 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-rose-500 to-rose-700 shadow-md shadow-rose-600/20 hover:shadow-lg hover:shadow-rose-600/30 hover:scale-[1.03] transition-all"
+              >
+                <Heart className="w-3.5 h-3.5 fill-current" />
+                <span className="hidden sm:inline">¿Qué Harías Tú? 🌹</span>
+                <span className="sm:hidden">¿Qué Harías?</span>
+              </button>
+            )}
+            <button
+              onClick={onBack}
+              className="inline-flex items-center gap-2 px-3 sm:px-5 py-2 rounded-full text-sm font-medium text-brand-800 hover:bg-brand-100 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span className="hidden sm:inline">Volver al inicio</span>
+            </button>
           </div>
-          <div className="flex flex-col leading-none">
-            <span className="font-serif text-lg font-bold text-brand-900">Ora Mujer</span>
-            <span className="text-xs text-gold-600 font-medium tracking-wide">
-              Biblioteca de oraciones
-            </span>
-          </div>
-        </a>
-        <button
-          onClick={onBack}
-          className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium text-brand-800 hover:bg-brand-100 transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Volver al inicio
-        </button>
-      </div>
-    </nav>
+        </div>
+      </nav>
+      {cardsOpen && experience && (
+        <BibleCardsModal experience={experience} onClose={() => setCardsOpen(false)} />
+      )}
+    </>
   );
 }
 

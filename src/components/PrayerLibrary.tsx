@@ -12,7 +12,10 @@ import {
   Share2,
   Check,
   AlertCircle,
+  Heart,
 } from 'lucide-react';
+import BibleCardsModal from '@/components/BibleCardsModal';
+import { getBibleCardExperience } from '@/data/bibleCards';
 
 /* ---------- Types ---------- */
 export type PrayerItem = {
@@ -38,6 +41,7 @@ export type LibraryConfig = {
   getBySlug: (slug: string) => PrayerItem | undefined;
   detailRouteRegex: RegExp;  // /^\/oramujer\/oracion\/(.+)$/i
   introAccent: string;       // gradient classes for intro bar
+  cardExperienceId?: string;  // bible card experience key (e.g. 'agradece')
 };
 
 /* ---------- Centralized copyright and attribution ---------- */
@@ -90,30 +94,50 @@ function FilterChip({
 }
 
 /* ---------- Nav bar ---------- */
-function NavBar({ name, basePath, onBack }: { name: string; basePath: string; onBack: () => void }) {
+function NavBar({ name, basePath, onBack, cardExperienceId }: { name: string; basePath: string; onBack: () => void; cardExperienceId?: string }) {
+  const [cardsOpen, setCardsOpen] = useState(false);
+  const experience = cardExperienceId ? getBibleCardExperience(cardExperienceId) : undefined;
+
   return (
-    <nav className="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-        <a href={basePath} className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-brand-gradient flex items-center justify-center shadow-md">
-            <BookOpen className="w-5 h-5 text-gold-400" />
+    <>
+      <nav className="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-2">
+          <a href={basePath} className="flex items-center gap-3 min-w-0">
+            <div className="w-10 h-10 rounded-xl bg-brand-gradient flex items-center justify-center shadow-md flex-shrink-0">
+              <BookOpen className="w-5 h-5 text-gold-400" />
+            </div>
+            <div className="flex flex-col leading-none min-w-0">
+              <span className="font-serif text-lg font-bold text-brand-900 truncate">{name}</span>
+              <span className="text-xs text-gold-600 font-medium tracking-wide">
+                Biblioteca de oraciones
+              </span>
+            </div>
+          </a>
+          <div className="flex items-center gap-2 flex-shrink-0">
+            {experience && (
+              <button
+                onClick={() => setCardsOpen(true)}
+                className="inline-flex items-center gap-1.5 px-3 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-rose-500 to-rose-700 shadow-md shadow-rose-600/20 hover:shadow-lg hover:shadow-rose-600/30 hover:scale-[1.03] transition-all"
+              >
+                <Heart className="w-3.5 h-3.5 fill-current" />
+                <span className="hidden sm:inline">¿Qué Harías Tú? 🌹</span>
+                <span className="sm:hidden">¿Qué Harías?</span>
+              </button>
+            )}
+            <button
+              onClick={onBack}
+              className="inline-flex items-center gap-2 px-3 sm:px-5 py-2 rounded-full text-sm font-medium text-brand-800 hover:bg-brand-100 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span className="hidden sm:inline">Volver al inicio</span>
+            </button>
           </div>
-          <div className="flex flex-col leading-none">
-            <span className="font-serif text-lg font-bold text-brand-900">{name}</span>
-            <span className="text-xs text-gold-600 font-medium tracking-wide">
-              Biblioteca de oraciones
-            </span>
-          </div>
-        </a>
-        <button
-          onClick={onBack}
-          className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium text-brand-800 hover:bg-brand-100 transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Volver al inicio
-        </button>
-      </div>
-    </nav>
+        </div>
+      </nav>
+      {cardsOpen && experience && (
+        <BibleCardsModal experience={experience} onClose={() => setCardsOpen(false)} />
+      )}
+    </>
   );
 }
 
@@ -190,7 +214,7 @@ function LibraryList({ config }: { config: LibraryConfig }) {
 
   return (
     <div className="min-h-screen bg-brand-50">
-      <NavBar name={config.name} basePath={config.basePath} onBack={() => (window.location.href = '/')} />
+      <NavBar name={config.name} basePath={config.basePath} onBack={() => (window.location.href = '/')} cardExperienceId={config.cardExperienceId} />
 
       {/* HEADER */}
       <section
@@ -487,7 +511,7 @@ function LibraryDetail({ config, slug }: { config: LibraryConfig; slug: string }
   if (!prayer) {
     return (
       <div className="min-h-screen bg-brand-50 flex flex-col">
-        <NavBar name={config.name} basePath={config.basePath} onBack={goBack} />
+        <NavBar name={config.name} basePath={config.basePath} onBack={goBack} cardExperienceId={config.cardExperienceId} />
         <div className="flex-1 flex items-center justify-center px-6">
           <div className="text-center max-w-md">
             <AlertCircle className="w-16 h-16 text-brand-300 mx-auto mb-6" />
@@ -553,7 +577,7 @@ function LibraryDetail({ config, slug }: { config: LibraryConfig; slug: string }
 
   return (
     <div className="min-h-screen bg-brand-50 flex flex-col">
-      <NavBar name={config.name} basePath={config.basePath} onBack={goBack} />
+      <NavBar name={config.name} basePath={config.basePath} onBack={goBack} cardExperienceId={config.cardExperienceId} />
 
       <section className="py-16 px-6 flex-1">
         <div className="max-w-2xl mx-auto">

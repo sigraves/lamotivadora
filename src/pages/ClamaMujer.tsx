@@ -21,6 +21,7 @@ const config: LibraryConfig = {
   getBySlug: getClamaPrayerBySlug,
   detailRouteRegex: /^\/clamamujer\/oracion\/(.+)$/i,
   introAccent: 'bg-gradient-to-r from-rose-600 to-rose-800',
+  cardExperienceId: 'clama',
 };
 
 export default function ClamaMujer() {

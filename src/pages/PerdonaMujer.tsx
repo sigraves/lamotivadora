@@ -21,6 +21,7 @@ const config: LibraryConfig = {
   getBySlug: getPerdonaPrayerBySlug,
   detailRouteRegex: /^\/perdonamujer\/oracion\/(.+)$/i,
   introAccent: 'bg-gradient-to-r from-sky-500 to-indigo-600',
+  cardExperienceId: 'perdona',
 };
 
 export default function PerdonaMujer() {
