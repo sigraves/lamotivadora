@@ -11,7 +11,7 @@ export default function BibleCardsModal({ experience, onClose }: Props) {
   const [currentCard, setCurrentCard] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
-  const dialogRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const closeBtnRef = useRef<HTMLButtonElement>(null);
 
   const totalCards = experience.scenarios.length;
@@ -63,6 +63,13 @@ export default function BibleCardsModal({ experience, onClose }: Props) {
     }
   };
 
+  // Reset scroll position when card or answer changes
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = 0;
+    }
+  }, [currentCard, selectedAnswer, isFlipped]);
+
   // Keyboard navigation
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -105,17 +112,17 @@ export default function BibleCardsModal({ experience, onClose }: Props) {
       {/* Backdrop */}
       <div className="absolute inset-0 bg-brand-900/80 backdrop-blur-sm" />
 
-      {/* Modal */}
+      {/* Modal — flex column with three regions: fixed header, scrollable content, fixed footer */}
       <div
-        ref={dialogRef}
         role="dialog"
         aria-modal="true"
         aria-label={`${experience.title} — ${experience.subtitle}`}
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-2xl max-h-[92vh] overflow-y-auto bg-white rounded-3xl card-shadow-lg animate-scale-in"
+        className="relative w-full max-w-2xl flex flex-col bg-white rounded-3xl card-shadow-lg animate-scale-in overflow-hidden
+                   h-[90dvh] sm:h-[85dvh] max-h-[680px]"
       >
-        {/* Header */}
-        <div className={`sticky top-0 z-10 bg-gradient-to-r ${experience.accentFrom} ${experience.accentTo} px-5 sm:px-8 py-5 flex items-center justify-between`}>
+        {/* ===== FIXED HEADER ===== */}
+        <div className={`flex-shrink-0 bg-gradient-to-r ${experience.accentFrom} ${experience.accentTo} px-5 sm:px-8 py-4 flex items-center justify-between`}>
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
               <Heart className="w-5 h-5 text-white" />
@@ -137,8 +144,11 @@ export default function BibleCardsModal({ experience, onClose }: Props) {
           </button>
         </div>
 
-        {/* Content */}
-        <div className="px-5 sm:px-8 py-6 sm:py-8">
+        {/* ===== SCROLLABLE CONTENT ===== */}
+        <div
+          ref={scrollRef}
+          className="flex-1 overflow-y-auto overscroll-contain px-5 sm:px-8 py-6 sm:py-8"
+        >
           {/* Intro */}
           {currentCard === 0 && !isFlipped && (
             <p className="text-sm sm:text-base text-brand-700 leading-relaxed mb-6 text-center">
@@ -168,7 +178,7 @@ export default function BibleCardsModal({ experience, onClose }: Props) {
             style={{ perspective: '1200px' }}
           >
             <div
-              className={`relative w-full transition-transform duration-500`}
+              className="relative w-full transition-transform duration-500"
               style={{
                 transformStyle: 'preserve-3d',
                 transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
@@ -256,8 +266,17 @@ export default function BibleCardsModal({ experience, onClose }: Props) {
             </div>
           </div>
 
-          {/* Navigation controls */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mt-6">
+          {/* Try other answers hint */}
+          {isFlipped && (
+            <p className="text-xs text-brand-400 text-center mt-4 animate-fade-in">
+              Puedes seleccionar otra respuesta para ver una reflexión diferente
+            </p>
+          )}
+        </div>
+
+        {/* ===== FIXED FOOTER — Navigation ===== */}
+        <div className="flex-shrink-0 border-t border-brand-100 bg-white px-5 sm:px-8 py-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="flex gap-2">
               <button
                 onClick={handlePrev}
@@ -285,13 +304,6 @@ export default function BibleCardsModal({ experience, onClose }: Props) {
               <ChevronRight className="w-4 h-4" />
             </button>
           </div>
-
-          {/* Try other answers hint */}
-          {isFlipped && (
-            <p className="text-xs text-brand-400 text-center mt-4 animate-fade-in">
-              Puedes seleccionar otra respuesta para ver una reflexión diferente
-            </p>
-          )}
         </div>
       </div>
     </div>
